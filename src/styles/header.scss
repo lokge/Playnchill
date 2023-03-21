@@ -1,0 +1,125 @@
+.header{
+  background-color: $black;
+  padding: 19px 0 24px;
+  border-bottom: 1px solid #13101B;
+  &__nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__lang{
+    @include text(600, 0, 16px, white);
+  }
+  &__list{
+    display: flex;
+    column-gap: 32px;
+    &-item{
+      @include text(600, 0, 16px, white);
+    }
+  }
+  &__user{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+  }
+  &__username{
+    @include text(600, 0, 16px, white);
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  &__title{
+    @include text(800, 0, 32px, white);
+  }
+  &__filters{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+  }
+  &__search{
+    background: rgba(196, 196, 196, 0.05);
+    border-radius: 15px;
+    padding: 22px 25px 23px 30px;
+    border: none;
+    width: 648px;
+    height: 66px;
+    @include text(400, 0, 16px, white);
+    clear: none;
+    &::placeholder{
+      @include text(400, 0, 16px, #9B9A9F);
+    }
+    &-logo{
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+    &-filter{
+      position: relative;
+      cursor: pointer;
+      &:hover > .header__search-popup{
+        display: flex;
+      }
+    }
+    &-popup{
+      position: absolute;
+      display: none;
+      gap: 5px;
+      align-items: start;
+      flex-direction: column;
+      background-color: #100D18;
+      z-index: 2;
+      padding: 10px 15px;
+      color: white;
+      border-radius: 8px;
+      width: 175px;
+      box-shadow: 0px 0px 17px 0px rgba(22,22,22,0.75);
+      -webkit-box-shadow: 0px 0px 17px 0px rgba(22,22,22,0.75);
+      -moz-box-shadow: 0px 0px 17px 0px rgba(22,22,22,0.75);
+      &::after{
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 11px;
+        width: 15px;
+        height: 15px;
+        background-color: #100D18;
+        transform: rotate(45deg);
+      }
+    }
+    &-list{
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      width: 100%;
+      &-item{
+        padding: 3px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        z-index: 3;
+        &:hover{
+          background-color: #77BE1D;
+        }
+      }
+    }
+  }
+  &__label{
+    position: relative;
+  }
+  &__right{
+    display: flex;
+    gap: 25px;
+  }
+}

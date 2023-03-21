@@ -1,0 +1,10 @@
+.home{
+  &__swiper{
+    &-row{
+      display: flex;
+      justify-content: center;
+      padding: 40px 0;
+      background-color: $black;
+    }
+  }
+}
