@@ -1,0 +1,10 @@
+.basket{
+  padding: 50px 0;
+  background-color: $black;
+  &__title{
+    @include text(700, 0, 48px, white);
+    &-count{
+      @include text(700, 0, 48p, #77BE1D);
+    }
+  }
+}

@@ -6,5 +6,64 @@
       padding: 40px 0;
       background-color: $black;
     }
+    &-logo{
+      position: absolute;
+      left: 120px;
+      top: 176px;
+      &-img{
+        width: 221px;
+      }
+    }
+    &-desc{
+      position: absolute;
+      left: 120px;
+      top: 261px;
+    }
+    &-description{
+      @include text(400, 38px, 24px, white);
+      text-align: start;
+      width: 592px;
+    }
+    &-prices{
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      gap: 19px;
+    }
+    &-price{
+      @include text(800, 0, 32px, white);
+    }
+    &-discount{
+      @include text(800, 0, 20px, #77BE1D);
+    }
+    &-original{
+      @include text(600, 0, 20px, rgba(255, 255, 255, 0.3));
+    }
+    &-btns{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 130px;
+    }
+    &-btn{
+      background-color: white;
+      @include text(600, 0, 18px, black);
+      padding: 23px 40px 27px;
+      border-radius: 15px;
+      &:hover{
+        box-shadow: 0 0 12px 0 rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0 0 12px 0 rgba(0,0,0,0.75);
+        -moz-box-shadow: 0 0 12px 0 rgba(0,0,0,0.75);
+        transform: scale(1.05);
+      }
+      &:last-of-type{
+        background-color: rgba(255, 255, 255, 0.05);
+        color: white;
+        &:hover{
+          background-color: white;
+          color: black;
+        }
+      }
+    }
   }
 }
