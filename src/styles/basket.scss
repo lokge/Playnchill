@@ -1,10 +1,80 @@
 .basket{
-  padding: 50px 0;
   background-color: $black;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
   &__title{
     @include text(700, 0, 48px, white);
     &-count{
       @include text(700, 0, 48p, #77BE1D);
+    }
+  }
+  &__login{
+    margin-top: 30px;
+    padding: 30px;
+    width: 893px;
+    height: 244px;
+    border-radius: 15px;
+    background: url("../assets/basket/basketBg.png") center/cover no-repeat;
+    &-title{
+      @include text(800, 0, 32px, white);
+      margin-bottom: 10px;
+    }
+    &-subtitle{
+      @include text(500, 26px, 20px, white);
+      &-text{
+        @include text(800, 26px, 20px, white);
+      }
+    }
+    &-btn{
+      padding: 13px 25px 16px;
+      background: white;
+      color: black;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+  }
+  &__aside{
+    margin-top: 101px;
+    &-block{
+      border-radius: 30px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      width: 321px;
+      background-color: $black;
+      padding: 30px;
+      text-align: center;
+    }
+    &-count{
+      @include text(700, 0, 20px, white);
+    }
+    &-total{
+      @include text(600, 0, 36px, white);
+      margin: 25px 0;
+    }
+    &-btn{
+      width: 100%;
+      color: #77BE1D;
+      background: rgba(119, 190, 29, 0.1);
+      border-radius: 15px;
+      padding: 18px 58px 22px;
+      margin-bottom: 30px;
+      &:hover{
+        background-color: #77BE1D;
+        color: white;
+      }
+    }
+    &-label {
+      text-align: left;
+      @include text(500, 25px, 16px, rgba(255, 255, 255, 0.3));
+    }
+    &-input{
+      background-color: $black;
+      border: none;
+    }
+    &-link{
+      @include text(500, 25px, 16px, #4885FC)
     }
   }
 }

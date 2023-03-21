@@ -14,5 +14,18 @@
     "filter6": "Simulators",
     "filter7": "Races",
     "filter8": "Online Games"
+  },
+  "basket": {
+    "basketTitle": "Basket",
+    "basketLogin": "Log in or register",
+    "basketDesc1": "You will be able to accumulate",
+    "basketDesc2": "bonus rubles",
+    "basketDesc3": "and use them when paying up to 50% of the cost of goods.",
+    "basketBtn": "Log in",
+    "asideTotal": "products",
+    "asideBtn": "Place an order",
+    "asideCheck": "By purchasing this product, I confirm that I have read and agree to the",
+    "asideLink": "terms and conditions of the store",
+    "asideCoupon": "If you have a discount coupon, you will be able to enter it in the next step"
   }
 }
