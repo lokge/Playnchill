@@ -44,7 +44,7 @@ const Basket = () => {
                         <p className="basket__content-empty">Корзина пуста</p>
                         <div className="basket__product">
                             <div className="basket__product-box">
-                                <img src={Minecraft} alt="Game image" className="basket__product-img"/>
+                                <img src={Minecraft} alt="game image" className="basket__product-img"/>
                             </div>
                             <div className="basket__product-box">
                                 <h3 className="basket__product-title">Minecraft</h3>

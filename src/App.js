@@ -29,7 +29,7 @@ function App() {
           <Route path='lottery' element={<Lottery/>}/>
           <Route path='feedback' element={<Feedback/>}/>
           <Route path='contacts' element={<Contacts/>}/>
-          <Route path='catalog' element={<Catalog/>}/>
+          <Route path='catalog/:category' element={<Catalog/>}/>
           <Route path='aboutus' element={<AboutUs/>}/>
           <Route path='favorite' element={<Favorite/>}/>
           <Route path='card' element={<Card/>}/>
