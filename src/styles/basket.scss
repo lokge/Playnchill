@@ -2,6 +2,7 @@
   background-color: $black;
   &__row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 50px 0;
   }
@@ -10,6 +11,9 @@
     &-count{
       @include text(700, 0, 48p, #77BE1D);
     }
+  }
+  &__content{
+    margin: 30px 0;
   }
   &__login{
     margin-top: 30px;
@@ -34,10 +38,18 @@
       color: black;
       border-radius: 10px;
       margin-top: 30px;
+      &:hover{
+        background-color: #e8e8e8;
+      }
     }
   }
+  &__cont{
+    position: relative;
+  }
   &__aside{
-    margin-top: 101px;
+    position: absolute;
+    right: 0;
+    top: 150px;
     &-block{
       border-radius: 30px;
       border: 2px solid rgba(255, 255, 255, 0.1);
@@ -45,6 +57,10 @@
       background-color: $black;
       padding: 30px;
       text-align: center;
+      &:last-of-type{
+        margin-top: 20px;
+        text-align: left;
+      }
     }
     &-count{
       @include text(700, 0, 20px, white);
@@ -75,6 +91,123 @@
     }
     &-link{
       @include text(500, 25px, 16px, #4885FC)
+    }
+    &-discount{
+      @include text(500, 25px, 16px, white);
+
+    }
+    &-percent{
+      @include text(500, 25px, 16px,#77BE1D);
+    }
+  }
+  &__product{
+    position: relative;
+    display: flex;
+    width: 893px;
+    border-bottom: 1px solid #13101B;
+    border-top: 1px solid #13101B;
+    padding: 30px 0;
+    &-box{
+      &:last-of-type{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        right: 0;
+        top: 30px;
+      }
+    }
+    &-title{
+      @include text(500, 0, 28px, white)
+    }
+    &-prices{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin: 10px 0 40px;
+    }
+    &-price{
+      @include text(700, 0, 32px, white);
+    }
+    &-disc{
+      @include text(700, 0, 24px, #77BE1D);
+    }
+    &-original{
+      @include text(700, 0, 24px, white);
+      opacity: 0.2;
+    }
+    &-desc{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &-activate{
+      @include text(400, 0, 18px, rgba(255, 255, 255, 0.3));
+    }
+    &-activated{
+      @include text(500, 0, 18px, white);
+    }
+    &-img{
+      margin-right: 30px;
+    }
+    &-addition{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 37px 0 95px;
+    }
+    &-add{
+      font-size: 25px;
+      cursor: pointer;
+      &:hover{
+        color: #9B9A9F;
+      }
+    }
+    &-count{
+      @include text(500, 0, 24px, white);
+    }
+    &-icon{
+      cursor: pointer;
+      &:hover{
+        scale: 1.1;
+      }
+    }
+  }
+  &__payments{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    width: 893px;
+  }
+  &__payment{
+    position: relative;
+    width: 436px;
+    height: 230px;
+    border: 1px solid #FFFFFF1A;
+    padding: 30px;
+    border-radius: 20px;
+    &-active{
+      border: 2px solid #77BE1D;
+      position: relative;
+      width: 436px;
+      height: 230px;
+      padding: 30px;
+      border-radius: 20px;
+    }
+    &-method{
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+    }
+    &-label{
+      display: flex;
+      gap: 20px;
+    }
+    &-title{
+      @include text(500, 0, 24px, white);
     }
   }
 }

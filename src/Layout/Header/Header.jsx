@@ -7,10 +7,13 @@ import {useTranslation} from "react-i18next";
 import SwitchLang from "./SwitchLang/SwitchLang";
 import {Avatar} from "@chakra-ui/react";
 import HeadFilter from "./HeadFilter/HeadFilter";
+import {useNavigate} from "react-router-dom"
 
 const Header = () => {
 
     const {t} = useTranslation()
+
+    const navigate = useNavigate()
 
     return (
         <header className="header">
@@ -33,10 +36,12 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="header__bottom">
-                        <div className="header__left">
+                        <button onClick={() => {
+                            navigate('/')
+                        }} className="header__left">
                             <img src={logo} alt="Playnchill Logo" className="header__logo"/>
                             <h1 className="header__title">Playnchill</h1>
-                        </div>
+                        </button>
                         <div className="header__filters">
                             <span className="header__filter">
                                 <HeadFilter/>
@@ -49,12 +54,16 @@ const Header = () => {
                             </label>
                         </div>
                         <div className="header__right">
-                            <span className="header__icon">
+                            <button onClick={() => {
+                                navigate('/favorite')
+                            }} className="header__icon">
                                 <AiOutlineHeart fill='white' size='25px'/>
-                            </span>
-                            <span className="header__icon">
+                            </button>
+                            <button onClick={() => {
+                                navigate('/basket')
+                            }} className="header__icon">
                                 <RiShoppingCartLine fill='#77BE1D' size='25px'/>
-                            </span>
+                            </button>
                         </div>
                     </div>
                 </nav>

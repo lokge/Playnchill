@@ -14,6 +14,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Card from "./pages/Card/Card";
 import './utils/i18n'
 import '../src/styles/style.scss'
+import Favorite from "./pages/Favorite/Favorite";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='contacts' element={<Contacts/>}/>
           <Route path='catalog' element={<Catalog/>}/>
           <Route path='aboutus' element={<AboutUs/>}/>
+          <Route path='favorite' element={<Favorite/>}/>
           <Route path='card' element={<Card/>}/>
         </Route>
       </Routes>
