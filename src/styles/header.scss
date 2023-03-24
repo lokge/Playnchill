@@ -27,8 +27,16 @@
     align-items: center;
     column-gap: 25px;
   }
+  &__userContent{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   &__username{
     @include text(600, 0, 16px, white);
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
   &__bottom{
     display: flex;

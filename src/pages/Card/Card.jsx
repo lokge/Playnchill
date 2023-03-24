@@ -1,14 +1,18 @@
 import React from 'react';
+import {useNavigate} from "react-router-dom";
 
 const Card = ({item}) => {
+
+    const navigate = useNavigate()
 
     return (
         <div className='card'>
             <div className="card__content">
-                <img src={`${item.image[0] === '.' ? '../' : ''}${item.image}`} alt={`${item.title} image`} className="card__img"/>
+                <img onClick={() => navigate(`/product/${item.id}`)} src={item.image} alt={item.title} className="card__img"/>
                 <div className="card__prices">
                     <p className="card__price">{item.price}</p>
                     <p className="card__disc">-{item.discount}</p>
+                    <p className="card__original">{item.price}</p>
                 </div>
                 <h3 className="card__title">
                     {item.title}

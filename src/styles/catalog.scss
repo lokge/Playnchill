@@ -1,21 +1,44 @@
 .catalog{
   background-color: $black;
   &__content{
+    padding: 80px;
     display: flex;
   }
   &__aside{
     width: 100%;
-    max-width: 250px;
-    height: 100vh;
+    max-width: 300px;
+    margin-right: 20px;
   }
   &__row{
-    width: calc(100% - 250px);
+    width: calc(100% - 300px);
     display: flex;
     flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 60px;
+    &-header{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    &-cards{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 30px;
+      row-gap: 60px;
+    }
     .card{
       width: calc(33.33333% - 20px);
+      height: 530px;
     }
+    &-title{
+      @include text(700, 0, 36px, white)
+    }
+  }
+  &__select > option{
+    color: white;
+    background-color: #252036;
+  }
+  .css-15z24qm >option, .css-15z24qm >optgroup{
+    background-color: #252036;
   }
 }

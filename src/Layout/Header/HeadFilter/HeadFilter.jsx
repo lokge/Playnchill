@@ -3,7 +3,10 @@ import {BsFilterLeft} from "react-icons/bs";
 import {useNavigate} from "react-router-dom"
 
 const gamesData = [
-    'Все игры',
+    {
+        ru : 'Все игры',
+        en : ''
+    },
     {
         ru : 'Экшен',
         en : 'action'
@@ -30,7 +33,7 @@ const gamesData = [
     },
     {
         ru : 'Песочницы',
-        en : 'sandboxes'
+        en : 'sandbox'
     },
     {
         ru : 'Онлайн игры',

@@ -1,16 +1,27 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {CiSearch} from 'react-icons/ci'
 import {RiShoppingCartLine} from 'react-icons/ri'
 import {AiOutlineHeart} from 'react-icons/ai'
+import {FiUser} from 'react-icons/fi'
 import logo from '../../assets/logo.png'
 import {useTranslation} from "react-i18next";
 import SwitchLang from "./SwitchLang/SwitchLang";
 import {Avatar} from "@chakra-ui/react";
 import HeadFilter from "./HeadFilter/HeadFilter";
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
+import {CustomContext} from "../../utils/Context";
 
 
 const Header = () => {
+
+    const {user, setUser} = useContext(CustomContext)
+
+    const logOutUser = () => {
+        setUser({
+            email: '',
+        })
+        localStorage.removeItem('user')
+    }
 
     const {t} = useTranslation()
 
@@ -32,8 +43,11 @@ const Header = () => {
                             <li className="header__list-item">{t('header.list5')}</li>
                         </ul>
                         <div className="header__user">
-                            <p className="header__username">Name Rules</p>
-                            <Avatar className="header__userPhoto" style={{ width:"35px", height:"35px"}} name='Erkin Dzhamanbaev' src="https://bipbap.ru/wp-content/uploads/2022/11/1652235714_41-kartinkin-net-p-prikolnie-kartinki-dlya-stima-44.jpg"/>
+                            {
+                                user.email.length ? <div onClick={logOutUser} className='header__userContent'><p className="header__username">{user.email}</p>
+                                    <Avatar className="header__userPhoto" style={{ width:"35px", height:"35px"}} name='Erkin Dzhamanbaev' src="https://bipbap.ru/wp-content/uploads/2022/11/1652235714_41-kartinkin-net-p-prikolnie-kartinki-dlya-stima-44.jpg"/></div> : <Link to='/register'><p className="header__username">Войти<span className="header__username-icon"><FiUser/></span></p>
+                                </Link>
+                            }
                         </div>
                     </div>
                     <div className="header__bottom">

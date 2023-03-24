@@ -1,0 +1,104 @@
+.content{
+  display: flex;
+  justify-content: center;
+  background-color: $black;
+  height: 100vh;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 470px;
+  padding: 45px 60px 20px;
+  gap: 20px;
+  &__title{
+    @include text(700, 0, 48px, white);
+    text-align: center;
+  }
+  &__select{
+    background-color: $black;
+  }
+  &__names{
+    display: flex;
+    gap: 20px;
+  }
+  &__input{
+    background-color: #06030F;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 4px;
+    padding: 5px 11px;
+    width: 100%;
+    color: white;
+    &::placeholder{
+      color: hsl(0, 0%, 50%);
+    }
+  }
+  &__message{
+    position: relative;
+    &-point{
+      position: absolute;
+      right: 5px;
+      top: 7px;
+      cursor: pointer;
+      &:hover > .form__popup{
+        display: flex;
+      }
+    }
+  }
+  &__popup{
+    display: none;
+    position: absolute;
+    right: -105px;
+    bottom: -120px;
+    background-color: #100d18;
+    text-align: center;
+    z-index: 1;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    box-shadow: 0 0 25px 10px rgba(6,3,15,0.75);
+    -webkit-box-shadow: 0 0 25px 10px rgba(6,3,15,0.75);
+    -moz-box-shadow: 0 0 25px 10px rgba(6,3,15,0.75);
+    &-text{
+      color: white;
+    }
+  }
+  &__label{
+    position: relative;
+    &-eye{
+      position: absolute;
+      right: 30px;
+      top: 1px;
+      cursor: pointer;
+    }
+  }
+  &__btn{
+    margin: 0;
+  }
+  &__help{
+    text-align: center;
+    color: white;
+  }
+  &__link{
+    color: #77BE1D;
+    text-decoration: underline;
+  }
+}
+
+
+.css-13cymwt-control{
+  background-color: $black !important;
+}
+.css-t3ipsp-control{
+  background-color: $black !important;
+  box-shadow: none !important;
+  &:hover{
+    border-color: white !important;
+  }
+}
+.css-1nm{
+  background-color: $black !important;
+}
+.css-1dimb5e-singleValue{
+  color: white !important;
+}
