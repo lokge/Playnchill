@@ -8,6 +8,9 @@
   }
   &__title{
     @include text(700, 0, 48px, white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
     &-count{
       @include text(700, 0, 48p, #77BE1D);
     }
@@ -47,9 +50,9 @@
     position: relative;
   }
   &__aside{
-    position: absolute;
-    right: 0;
-    top: 150px;
+
+
+    margin-top: 101px;
     &-block{
       border-radius: 30px;
       border: 2px solid rgba(255, 255, 255, 0.1);
@@ -107,6 +110,10 @@
     border-bottom: 1px solid #13101B;
     border-top: 1px solid #13101B;
     padding: 30px 0;
+    &-img{
+      max-width: 240px;
+      height: 200px;
+    }
     &-box{
       &:last-of-type{
         display: flex;
@@ -179,6 +186,7 @@
     flex-wrap: wrap;
     gap: 21px;
     width: 893px;
+    margin-top: 40px;
   }
   &__payment{
     position: relative;

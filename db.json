@@ -135,6 +135,18 @@
       "email": "loki@mail.ru",
       "password": "$2a$10$Cfc5fqr3anqaNAkLUxC6CO7MemIBnWHtuIKwEW7GhrXGxGIwL9Z1C",
       "id": 6
+    },
+    {
+      "email": "lokge@gmail.com",
+      "password": "$2a$10$PUX6560kWPu/aVevOP5OO.SqwQb5kGwGhlk5YLX3hOK9860fLw7gO",
+      "login": "lokge",
+      "id": 7
+    },
+    {
+      "email": "lokge@mail.ru",
+      "password": "$2a$10$zCpDgCRQLMC8CctQLQk85ueQw/rKhMA.vs16sIlryD3RK9ANlqVIS",
+      "login": "lokge",
+      "id": 8
     }
   ]
 }

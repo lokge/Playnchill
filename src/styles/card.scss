@@ -1,4 +1,7 @@
 .card{
+  &__content{
+    cursor: pointer;
+  }
   &__prices{
     display: flex;
     align-items: center;
@@ -34,6 +37,7 @@
     border-radius: 50%;
     border: none;
     background-color: #3D394A;
+    cursor: pointer;
     &-text{
       @include text(500, 0, 14px, #747474);
     }

@@ -45,7 +45,7 @@ const Header = () => {
                         <div className="header__user">
                             {
                                 user.email.length ? <div onClick={logOutUser} className='header__userContent'><p className="header__username">{user.email}</p>
-                                    <Avatar className="header__userPhoto" style={{ width:"35px", height:"35px"}} name='Erkin Dzhamanbaev' src="https://bipbap.ru/wp-content/uploads/2022/11/1652235714_41-kartinkin-net-p-prikolnie-kartinki-dlya-stima-44.jpg"/></div> : <Link to='/register'><p className="header__username">Войти<span className="header__username-icon"><FiUser/></span></p>
+                                    <Avatar className="header__userPhoto" style={{ width:"35px", height:"35px"}} name='Erkin Dzhamanbaev' src="https://bipbap.ru/wp-content/uploads/2022/11/1652235714_41-kartinkin-net-p-prikolnie-kartinki-dlya-stima-44.jpg"/></div> : <Link to='/login'><p className="header__username">Войти<span className="header__username-icon"><FiUser/></span></p>
                                 </Link>
                             }
                         </div>

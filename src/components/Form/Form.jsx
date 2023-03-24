@@ -23,7 +23,7 @@ const Form = () => {
             login: e.target[3].value,
             password: e.target[5].value
         }
-        axios.post('http://localhost:6969/register' , newUser)
+        axios.post('/register' , newUser)
             .then(({data}) => {
                 setUser({
                     token: data.accessToken,
