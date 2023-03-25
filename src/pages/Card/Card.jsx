@@ -15,7 +15,8 @@ const Card = ({item}) => {
                 <img onClick={() => navigate(`/product/${item.id}`)} src={item.image} alt={item.title} className="card__img"/>
                 <div onClick={() => navigate(`/product/${item.id}`)} className="card__prices">
                     <p className="card__price">{item.price}</p>
-                    <p className="card__disc">-{item.discount}</p>
+                    <p className="card__disc">- {item.discount}
+                    </p>
                     <p className="card__original">{item.price}</p>
                 </div>
                 <h3 onClick={() => navigate(`/product/${item.id}`)} className="card__title">

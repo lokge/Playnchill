@@ -13,19 +13,19 @@ export const gameData = [
     },
     {
         ru : 'Приключения',
-        en : 'adventures'
+        en : 'adventure'
     },
     {
         ru : 'Стратегии',
-        en : 'strategies'
+        en : 'strategy'
     },
     {
         ru : 'Симуляторы',
-        en : 'simulators'
+        en : 'simulator'
     },
     {
         ru : 'Гонки',
-        en : 'races'
+        en : 'race'
     },
     {
         ru : 'Песочницы',

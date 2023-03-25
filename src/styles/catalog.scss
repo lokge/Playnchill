@@ -1,8 +1,9 @@
 .catalog{
   background-color: $black;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   &__content{
-    padding: 80px;
+    padding: 80px 0;
     display: flex;
   }
   &__aside{
@@ -36,8 +37,7 @@
       row-gap: 60px;
     }
     .card{
-      width: calc(33.33333% - 20px);
-      height: 530px;
+      min-width: 204px;
     }
     &-title{
       @include text(700, 0, 36px, white)
