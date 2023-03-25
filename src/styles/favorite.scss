@@ -1,0 +1,14 @@
+.favorite{
+  height: 100vh;
+  padding: 50px 0;
+  background-color: $black;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__product{
+    &-box{
+      display: flex;
+    }
+  }
+}

@@ -2,8 +2,9 @@ import React, {useContext, useEffect, useState} from 'react';
 import {CustomContext} from "../../utils/Context";
 import axios from "../../utils/axios";
 import Card from "../Card/Card";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import CatalogSelect from "./CatalogSelect/CatalogSelect";
+import {gameData} from "../../utils/gameData"
 
 
 const Catalog = () => {
@@ -12,11 +13,13 @@ const Catalog = () => {
 
     const {category} = useParams()
 
+    const navigate = useNavigate()
+
     useEffect(() => {
-        axios(`http://localhost:6969/products?category=${category}`)
+        axios(`/products?${category !== 'all' ? 'category=' + category : ''}`)
             .then(({data}) => setGames(data))
             .catch((err) => console.log('Данные не получены'))
-    },[])
+    },[category])
 
     const {products, getAllProducts} = useContext(CustomContext)
 
@@ -28,7 +31,17 @@ const Catalog = () => {
         <section className="catalog">
             <div className="container">
                 <div className="catalog__content">
-                    <aside className="catalog__aside catalog"></aside>
+                    <aside className="catalog__aside">
+                        <label className="catalog__aside-label">
+                            <select onChange={(e) => {navigate(`/catalog/${e.target.value}`)}} name="" id="" className="catalog__aside-select">
+                                {
+                                    gameData.map((item) => (
+                                        <option selected={item.en === category} key={item.en} value={item.en}>{item.ru}</option>
+                                    ))
+                                }
+                            </select>
+                        </label>
+                    </aside>
                     <div className="catalog__row">
                         <div className="catalog__row-header">
                             <h2 className="catalog__row-title">

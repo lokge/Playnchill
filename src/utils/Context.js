@@ -15,7 +15,7 @@ export const Context = (props) => {
     const addBasket = (product) => {
         setBasket(prev => [...prev, {
             ...product,
-            count: 1
+            count: 1,
         }])
         localStorage.setItem('basket', JSON.stringify(basket))
     }
@@ -49,7 +49,6 @@ export const Context = (props) => {
     const delBasket = (id) => {
         setBasket(prev => prev.filter(item => item.id !== id))
     }
-
 
     //Работа с юзером
     useEffect(() => {
