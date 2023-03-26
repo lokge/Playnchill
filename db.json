@@ -158,7 +158,7 @@
     },
     {
       "id": 7,
-      "image": "https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Resize-DEnoy8d40lKoxG.jpg",
+      "image": "https://i.playground.ru/e/ruUnc9hzD-qVDpdaGkZ_Yg.jpeg?200x277",
       "title": "Call of Duty: Modern Warfare 2",
       "category": "action",
       "price": "2500",
@@ -365,7 +365,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 15,
       "image": "https://img1.od-cdn.com/ImageType-400/0111-1/D6A/4A1/6D/%7BD6A4A16D-CE77-4316-8885-C7FC78A4A4ED%7DImg400.jpg",
       "title": "Battlefield 1",
       "category": "online",
@@ -388,6 +388,136 @@
         "ram": "16gb",
         "disk": "50gb",
         "system": "64-разрядная Windows 10 или выше"
+      }
+    },
+    {
+      "id": 16,
+      "image": "https://i.playground.ru/e/zycMwcDlv5lIBaiPmxOy-A.jpeg?200x277",
+      "title": "Warcraft 3: The Frozen Throne",
+      "category": "strategy",
+      "price": "850",
+      "description": "Продолжение одной из лучших стратегий реального времени - WarCraft 3: Reighn of Chaos - ставшее еще лучше, масштабнее и красивее. Новые герои, новые юниты, возможность строить магазины, идеальный баланс, превосходная игровая механика - вот основные причины, по которым WarCraft 3: The Frozen Throne остается популярным среди киберспортсменов (да и простых игроков, пожалуй) всего мира вот уже несколько лет.",
+      "region": "Россия и страны СНГ",
+      "service": "Steam",
+      "contentType": "Учетная Запись",
+      "discount": "8%",
+      "minSystem": {
+        "processor": "Intel Core i5 6600K / AMD FX-6350",
+        "videoCard": "nVidia GeForce GTX 660 2 ГБ / AMD Radeon HD 7850 2 ГБ",
+        "ram": "8gb",
+        "disk": "50gb",
+        "system": "64-разрядные Windows 7, Windows 8.1 или Windows 10"
+      },
+      "recSystem": {
+        "processor": "Intel Core i7 4790 / AMD FX 8350 Wraith",
+        "videoCard": "nVidia GeForce GTX 1060 3 ГБ / AMD Radeon RX 480 4 ГБ",
+        "ram": "16gb",
+        "disk": "50gb",
+        "system": "64-разрядная Windows 10 или выше"
+      }
+    },
+    {
+      "id": 17,
+      "image": "https://i.playground.ru/e/dD4cMBkftYe5Vgyk5J1oHA.jpeg?200x277",
+      "title": "PUBG: BATTLEGROUNDS",
+      "category": "online",
+      "price": "1250",
+      "description": "Шутер в жанре «королевская битва». На большой открытой карте высаживается сотня игроков, задача каждого из которых — остаться в живых.\n\nИгроки обыскивают дома на предмет наличия лута, обзаводятся оружием и экипировкой, а последовательно сужающаяся игровая зона вынуждает их со временем приближаться друг к другу и вступать в перестрелки.\n\nВ PUBG представлены три основных режима: игра в одиночку, в паре и в отряде из четырех человек. Соответственно, победителем матча может стать один игрок, пара или целый отряд.\n\nГлавной отличительной особенностью PUBG является тот факт, что руководит разработкой и креативным развитием игры Брендан Грин — создатель модификаций «королевская битва» для серии Arma и игры H1Z1: King of the Kill в аналогичном жанре.",
+      "region": "Россия и страны СНГ",
+      "service": "Steam",
+      "contentType": "Учетная Запись",
+      "discount": "15%",
+      "minSystem": {
+        "processor": "Intel Core i3-4340 / AMD FX-6300",
+        "videoCard": "NVIDIA GeForce GTX 960 2 ГБ / AMD Radeon R7 370 2 ГБ",
+        "ram": "8gb",
+        "disk": "40gb",
+        "system": "64-разрядная Windows 10"
+      },
+      "recSystem": {
+        "processor": "Intel Core i5-7600K / AMD Ryzen 5-1600",
+        "videoCard": "NVIDIA GeForce GTX 1060 3 ГБ / AMD Radeon RX 580 4 ГБ",
+        "ram": "16gb",
+        "disk": "40gb",
+        "system": "64-разрядная Windows 10"
+      }
+    },
+    {
+      "id": 18,
+      "image": "https://i.playground.ru/e/RhkBTF7F2UwkE-EvTBU6cA.jpeg?200x277",
+      "title": "Need for Speed: Underground 2",
+      "category": "race",
+      "price": "699",
+      "description": "Вторая игра из безусловно удачной серии Need For Speed: Underground, посвещенная уличным гонкам. Ощущение реальной скорости, увеличенные возможности по тюнингу машин, переработанная графическая основа и более 30-ти прекрасных машин - вот то, ради чего её стоит ждать.",
+      "region": "Россия и страны СНГ",
+      "service": "Epic Games Store",
+      "contentType": "Учетная Запись",
+      "discount": "15%",
+      "minSystem": {
+        "processor": "Intel Pentium III с тактовой частотой 933 МГц",
+        "videoCard": "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
+        "ram": "256mb",
+        "disk": "2gb",
+        "system": "Windows 98/98SE/ME/2000/XP"
+      },
+      "recSystem": {
+        "processor": "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
+        "videoCard": "NVIDIA GeForce 4 / AMD Radeon 9000 со 128 Мб видеопамяти",
+        "ram": "512mb",
+        "disk": "2gb",
+        "system": "Windows XP"
+      }
+    },
+    {
+      "id": 19,
+      "image": "https://i.playground.ru/e/B_iMPjAeblsKxXYajh0nig.jpeg?200x277",
+      "title": "Euro Truck Simulator 2",
+      "category": "simulator",
+      "price": "1099",
+      "description": "Euro Truck Simulator 2 подарит вам незаменимый опыт управления самыми мощными машинами, когда-либо появлявшимися на шоссейных магистралях и автобанах Европы. Вы пройдете нелегкий путь от энтузиаста-дальнобойщика до обладателя собственной транспортной империи. Настраивайте грузовиков, расширяйте свой автопарк, нанимайте водителей, покупайте гаражи и исследуйте дороги — вот лишь малая часть того, чем вы можете заняться в Euro Truck Simulator 2.\n\nВ особенности игры стоит отнести большую территорию — от Великобритании до Польши, тысячи километров реальной дорожной сети с сотнями известных достопримечательностей, а также широкие возможности для тюнинга и стайлинга грузовиков (от увеличения производительности до замены фар, гудков и выхлопных труб).",
+      "region": "Россия и страны СНГ",
+      "service": "Steam",
+      "contentType": "Ключ",
+      "discount": "15%",
+      "minSystem": {
+        "processor": "Intel / Dual core CPU 2.4 GHz",
+        "videoCard": "NVIDIA GeForce  GTS 450-class (Intel HD 4000)",
+        "ram": "4gb",
+        "disk": "3gb",
+        "system": "Windows 7"
+      },
+      "recSystem": {
+        "processor": "Intel / Quad core CPU 3.0 GHz",
+        "videoCard": "NVIDIA GeForce GTX 760-class (2 ГБ)",
+        "ram": "5gb",
+        "disk": "3gb",
+        "system": "Windows 7/8.1/10 (64-битные)"
+      }
+    },
+    {
+      "id": 20,
+      "image": "https://i.playground.ru/e/ioKYo7JPFmJ89JCwaRbWIA.jpeg?200x277",
+      "title": "Brawlhalla",
+      "category": "online",
+      "price": "1200",
+      "description": "Бесплатный файтинг-платформер, бои которого рассчитаны на участие до восьми игроков в локальном или онлайн-мультиплеере.\n\nBrawlhalla позволяет вам сражаться в обычных казуальных боях, повышать свой райнг в рейтинговых матчах или создавать кастомные комнаты, чтобы веселиться с друзьями в своей особой атмосфере.\n\nНа уровнях вы можете подобрать различное оружие, которое даст вам преимущество над врагом: мечи, топоры, молоты, бластеры, ракетницы и многое другое. Каждое оружие существенно изменяет стиль игры и доступные возможности.\n\nПомимо оружия вы можете использовать и гаджеты. Мины, бомбы и шары с лезвиями добавляют в игру еще больше опасности, позволяя игрокам моментально изменять ход матча в свою пользу.\n\n",
+      "region": "Россия и страны СНГ",
+      "service": "Steam",
+      "contentType": "Учетная запись",
+      "discount": "15%",
+      "minSystem": {
+        "processor": "Intel / Dual core CPU 2.4 GHz",
+        "videoCard": "",
+        "ram": "2gb",
+        "disk": "800mb",
+        "system": "Windows XP SP3"
+      },
+      "recSystem": {
+        "processor": "Intel / Quad core CPU 3.0 GHz",
+        "videoCard": "",
+        "ram": "4gb",
+        "disk": "2gb",
+        "system": "Windows 7"
       }
     }
   ],
