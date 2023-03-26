@@ -24,14 +24,22 @@ const Card = ({item}) => {
                 </h3>
                 <div className="card__chose">
                     <div className="card__chose-cont">
-                        <button className="card__key"></button>
+                        <button type='button' onClick={() => addBasket(item)} className="card__key">
+                            {
+                                item.contentType === 'Ключ' ? <BsFillCheckCircleFill fill='white'/> : ''
+                            }
+                        </button>
                         <p className="card__key-text">Ключ</p>
                     </div>
                     <div className="card__chose-cont">
                         <button type='button' onClick={() => addBasket(item)} className="card__key">
-                            <span className="card__key-icon"><BsFillCheckCircleFill fill='white'/></span>
+                            <span className="card__key-icon">
+                                {
+                                    item.contentType === 'Учетная запись' ? <BsFillCheckCircleFill fill='white'/> : ''
+                                }
+                            </span>
                         </button>
-                        <p className="card__key-text">Аккаунт Steam</p>
+                        <p className="card__key-text">{item.service}</p>
                     </div>
                 </div>
             </div>

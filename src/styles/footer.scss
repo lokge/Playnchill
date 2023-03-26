@@ -1,0 +1,46 @@
+.footer{
+  padding: 80px 0;
+  background-color: $black;
+  border-top: 1px solid #13101B;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list{
+    &-title{
+      @include text(600, 0, 22px, white);
+      margin-bottom: 27px;
+    }
+    &-item{
+      @include text(400, 0, 19px, #CDCDCF);
+      cursor: pointer;
+      &:nth-of-type(2){
+        margin: 21px 0;
+      }
+    }
+  }
+  &__text{
+    @include text(400, 0, 15px, #63686D);
+    margin: 41px 0 32px;
+  }
+  &__bottom{
+    padding: 25px 0;
+    border-top: 1px solid #13101B;
+    &-icon{
+      &:hover{
+        fill: #77BE1D;
+      }
+    }
+    &-box{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    &-links{
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+  }
+}

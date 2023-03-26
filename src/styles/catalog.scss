@@ -12,12 +12,39 @@
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+    &-search{
+      width: 100%;
+      color: white;
+      padding: 14px 20px;
+      background-color: $black;
+      border: 1px solid #FFFFFF1A;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      &::placeholder{
+        color: #606367;
+      }
+    }
     &-label{
       width: 100%;
     }
     &-select{
       width: 100%;
     }
+    &-form{
+      display: flex;
+      flex-direction: column;
+      padding: 15px 5px;
+    }
+    &-accordion{
+      margin-top: 50px;
+    }
+    &-border{
+      border: none !important;
+    }
+  }
+  &__select{
+    padding: 14px 20px !important;
+    height: 100% !important;
   }
   &__row{
     width: calc(100% - 300px);
@@ -50,4 +77,28 @@
   .css-15z24qm >option, .css-15z24qm >optgroup{
     background-color: #252036;
   }
+}
+
+.chakra-checkbox__label{
+  color: white;
+}
+.css-1eziwv{
+  color: white;
+}
+.chakra-icon > path{
+  fill: #77BE1D;
+}
+.css-17mg6aq:last-of-type{
+  border: none;
+}
+
+.css-uttm9k{
+  padding: 0 0 0 5px !important;
+}
+.chakra-accordion__panel{
+  padding: 15px 0 0 5px !important;
+}
+
+.chakra-checkbox{
+  margin: 15px 0 0;
 }

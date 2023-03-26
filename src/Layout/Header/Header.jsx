@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import {CiSearch} from 'react-icons/ci'
 import {RiShoppingCartLine} from 'react-icons/ri'
 import {AiOutlineHeart} from 'react-icons/ai'
@@ -10,9 +10,12 @@ import {Avatar} from "@chakra-ui/react";
 import HeadFilter from "./HeadFilter/HeadFilter";
 import {Link, useNavigate} from "react-router-dom"
 import {CustomContext} from "../../utils/Context";
+import debounce from "@material-ui/core/utils/debounce";
 
 
 const Header = () => {
+
+
 
     const {user, setUser} = useContext(CustomContext)
 
@@ -22,6 +25,8 @@ const Header = () => {
         })
         localStorage.removeItem('user')
     }
+
+
 
     const {t} = useTranslation()
 

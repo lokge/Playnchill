@@ -9,6 +9,7 @@ import Carousel3 from "../Carousel/CarouselContent/carousel3.png"
 import nfsLogo from "../Carousel/CarouselContent/nfsLogo.png"
 
 const Carousel = () => {
+
     return (
         <section className="home__swiper">
             <div className="home__swiper-row">
@@ -31,7 +32,7 @@ const Carousel = () => {
                                 <p className="home__swiper-original">6 999 Р</p>
                             </div>
                             <div className="home__swiper-btns">
-                                <button className="home__swiper-btn">В корзину</button>
+                                <button type='button' className="home__swiper-btn">В корзину</button>
                                 <button className="home__swiper-btn">В избранное</button>
                             </div>
                         </div>
