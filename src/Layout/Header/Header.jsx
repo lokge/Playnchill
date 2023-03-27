@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import {CiSearch} from 'react-icons/ci'
 import {RiShoppingCartLine} from 'react-icons/ri'
 import {AiOutlineHeart} from 'react-icons/ai'
@@ -10,15 +10,32 @@ import {Avatar} from "@chakra-ui/react";
 import HeadFilter from "./HeadFilter/HeadFilter";
 import {Link, useNavigate} from "react-router-dom"
 import {CustomContext} from "../../utils/Context";
+import axios from "../../utils/axios";
 import debounce from "@material-ui/core/utils/debounce";
 
 
 const Header = () => {
 
+    // const handleChange = (e) => {
+    //     setTitle(e.target.value)
+    // }
+    //
+    // const [games, setGames] = useState([])
+    // const [title, setTitle] = useState('')
+    //
+    // const {products, getAllProducts} = useContext(CustomContext)
+    //
+    // useEffect(() => {
+    //
+    //     let titleFilter = `${title.length !== 0 ? 'title_like=' + title + '&' : ''}`
+    //
+    //     axios(`/products?${titleFilter}`)
+    //         .then(({data}) => setGames(data))
+    //         .catch((err) => console.log('Данные не получены'))
+    // },[title])
 
-
+    //user
     const {user, setUser} = useContext(CustomContext)
-
     const logOutUser = () => {
         setUser({
             email: '',

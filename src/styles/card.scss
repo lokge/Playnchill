@@ -1,9 +1,17 @@
 .card{
+  &__new{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #FF4C00;
+  }
   &__img{
     min-width: 204px;
+    max-width: 204px;
     height: 272px;
   }
   &__content{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

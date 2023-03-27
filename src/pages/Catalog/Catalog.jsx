@@ -74,7 +74,7 @@ const Catalog = () => {
                 <div className="catalog__content">
                     <aside className="catalog__aside">
                         <label className="catalog__aside-label">
-                            <input  defaultValue={title} onChange={debounce(handleChange, 500)} placeholder="Я ищу.." type="search" className="catalog__aside-search"/>
+                            <input defaultValue={title} onChange={debounce(handleChange, 500)} placeholder="Я ищу.." type="search" className="catalog__aside-search"/>
                             <Select onChange={(e) => {navigate(`/catalog/${e.target.value}`)}} className="catalog__select" bg='#06030F'
                                     borderColor='#FFFFFF1A'
                                     color='white'>

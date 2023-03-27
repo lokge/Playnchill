@@ -3,6 +3,8 @@
     {
       "id": 1,
       "image": "https://1.bp.blogspot.com/-tkjLAairbg4/XDz-1fj9kOI/AAAAAAAAAcw/9d6rcsgI6OMlIEBp9vTpyqBbOoXp8EthQCK4BGAYYCw/s400/gta5.jpg",
+      "bigImage": "https://i.imgur.com/mTQfRyB.jpg",
+      "update": "true",
       "title": "Grand Theft Auto V",
       "category": "action",
       "price": "1500",
@@ -29,6 +31,8 @@
     {
       "id": 2,
       "image": "https://m.gjcdn.net/realm-cover/300/2-c2eysird-v4.jpg",
+      "bigImage": "https://i.imgur.com/RYL35Va.jpg",
+      "update": "true",
       "title": "Minecraft",
       "category": "sandbox",
       "price": "1200",
@@ -55,6 +59,8 @@
     {
       "id": 3,
       "image": "https://2.bp.blogspot.com/-xJZYFeDbvQQ/UfqhM7IfDXI/AAAAAAAAAZM/4Q7MiIB0jek/s400/gta-vice-city.jpg",
+      "bigImage": "",
+      "update": "false",
       "title": "Grand Theft Auto: Vice City",
       "category": "action",
       "price": "800",
@@ -81,6 +87,8 @@
     {
       "id": 4,
       "image": "https://romsunlocked.com/wp-content/uploads/2023/02/Grand-Theft-Auto-III-PS2-ROM-Free-Download-PS2-Free-ROM-Download.png",
+      "bigImage": "",
+      "update": "false",
       "title": "Grand Theft Auto: 3",
       "category": "action",
       "price": "690",
@@ -107,6 +115,8 @@
     {
       "id": 5,
       "image": "https://cdn.alfabetajuega.com/alfabetajuega/2020/08/need-for-speed-most-wanted.jpg?height=400&aspect_ratio=9:12",
+      "bigImage": "",
+      "update": "false",
       "title": "Need for Speed: Most Wanted",
       "category": "race",
       "price": "1500",
@@ -133,6 +143,8 @@
     {
       "id": 6,
       "image": "https://m.gjcdn.net/realm-cover/300/72004-rgn9j9w5-v4.jpg",
+      "bigImage": "",
+      "update": "false",
       "title": "Forza Horizon 4",
       "category": "race",
       "price": "2500",
@@ -159,6 +171,8 @@
     {
       "id": 7,
       "image": "https://i.playground.ru/e/ruUnc9hzD-qVDpdaGkZ_Yg.jpeg?200x277",
+      "bigImage": "",
+      "update": "false",
       "title": "Call of Duty: Modern Warfare 2",
       "category": "action",
       "price": "2500",
@@ -185,6 +199,8 @@
     {
       "id": 8,
       "image": "https://img1.od-cdn.com/ImageType-400/7964-1/FE1/669/0D/%7BFE16690D-11E8-40CE-8C3E-B99C49C7B6FC%7DImg400.jpg",
+      "bigImage": "",
+      "update": "false",
       "title": "Little Nightmares",
       "category": "simulator",
       "price": "1900",
@@ -211,6 +227,8 @@
     {
       "id": 9,
       "image": "https://cdn.dreamgame.com/assets/images/thumbs/61862a056354d425c3dee137-human-fall-flat-400.jpeg",
+      "bigImage": "",
+      "update": "true",
       "title": "Human Fall Flat",
       "category": "simulator",
       "price": "1800",
@@ -237,6 +255,8 @@
     {
       "id": 10,
       "image": "https://img.webnovel.com/bookcover/18745335806988105/300/300.jpg?updateTime=1608048852903",
+      "bigImage": "",
+      "update": "false",
       "title": "Among Us",
       "category": "indie",
       "price": "1000",
@@ -263,6 +283,8 @@
     {
       "id": 11,
       "image": "https://wallabilidade.files.wordpress.com/2011/03/untitled-3.jpg",
+      "bigImage": "",
+      "update": "false",
       "title": "Counter Strike: Source",
       "category": "online",
       "price": "800",
@@ -289,6 +311,8 @@
     {
       "id": 12,
       "image": "http://whiteaways.lk/wp-content/uploads/2021/01/1-2-300x400.jpg",
+      "bigImage": "",
+      "update": "false",
       "title": "Tomb Raider (2013)",
       "category": "adventure",
       "price": "1200",
@@ -315,6 +339,8 @@
     {
       "id": 13,
       "image": "https://i.playground.ru/e/IjOWXjBCKky5tXE-gSVe7g.jpeg?200x277",
+      "bigImage": "",
+      "update": "true",
       "title": "Dota 2",
       "category": "strategy",
       "price": "800",
@@ -341,6 +367,8 @@
     {
       "id": 14,
       "image": "https://i.playground.ru/e/IufwMNNL86LiJw-XfLd88g.jpeg?200x277",
+      "bigImage": "",
+      "update": "false",
       "title": "Terraria",
       "category": "sandbox",
       "price": "300",
@@ -367,6 +395,8 @@
     {
       "id": 15,
       "image": "https://img1.od-cdn.com/ImageType-400/0111-1/D6A/4A1/6D/%7BD6A4A16D-CE77-4316-8885-C7FC78A4A4ED%7DImg400.jpg",
+      "bigImage": "https://imgur.com/9YboiGD.jpg",
+      "update": "false",
       "title": "Battlefield 1",
       "category": "online",
       "price": "850",
@@ -393,6 +423,8 @@
     {
       "id": 16,
       "image": "https://i.playground.ru/e/zycMwcDlv5lIBaiPmxOy-A.jpeg?200x277",
+      "bigImage": "",
+      "update": "false",
       "title": "Warcraft 3: The Frozen Throne",
       "category": "strategy",
       "price": "850",
@@ -419,6 +451,8 @@
     {
       "id": 17,
       "image": "https://i.playground.ru/e/dD4cMBkftYe5Vgyk5J1oHA.jpeg?200x277",
+      "bigImage": "",
+      "update": "false",
       "title": "PUBG: BATTLEGROUNDS",
       "category": "online",
       "price": "1250",
@@ -445,6 +479,8 @@
     {
       "id": 18,
       "image": "https://i.playground.ru/e/RhkBTF7F2UwkE-EvTBU6cA.jpeg?200x277",
+      "bigImage": "",
+      "update": "false",
       "title": "Need for Speed: Underground 2",
       "category": "race",
       "price": "699",
@@ -471,6 +507,8 @@
     {
       "id": 19,
       "image": "https://i.playground.ru/e/B_iMPjAeblsKxXYajh0nig.jpeg?200x277",
+      "bigImage": "",
+      "update": "false",
       "title": "Euro Truck Simulator 2",
       "category": "simulator",
       "price": "1099",
@@ -497,6 +535,8 @@
     {
       "id": 20,
       "image": "https://i.playground.ru/e/ioKYo7JPFmJ89JCwaRbWIA.jpeg?200x277",
+      "bigImage": "",
+      "update": "false",
       "title": "Brawlhalla",
       "category": "online",
       "price": "1200",
@@ -518,6 +558,34 @@
         "ram": "4gb",
         "disk": "2gb",
         "system": "Windows 7"
+      }
+    },
+    {
+      "id": 21,
+      "image": "https://i.playground.ru/e/ZPHoZvrANkNGr-_ww2ZEQA.jpeg?200x277",
+      "bigImage": "https://i.imgur.com/5KQAQrk.png",
+      "update": "false",
+      "title": "Grand Theft Auto: San Andreas",
+      "category": "action",
+      "price": "1200",
+      "description": "В новой части вы можете вжиться в роль афроамериканца по имени CJ и отправиться в San Andreas (состоящий из трех частей, прообразами для которых в свою очередь стали реальные американские города) для решения семейных проблем. Которые, как это часто бывает, бросают нашего героя в совершенно немыслимые приключения, «знакомят» с верхами мафии и заставляют организовать собственную группировку. Именно последней в игре уделено наибольшее внимание – впервые в истории серии вы можете пользоваться услугами напарников и брать под свой контроль куски города, в бою отнимая их у конкурирующих структур.Кроме того, разработчики разбавили быт игрока возможностью сделать прическу, подкачать мускулатуру (иначе герой превратится в жирдяя), покататься на велосипеде и покупать недвижимость, которой нашлось место и в предыдущей части. Ну а еще вам придется постоянно есть – в общем, все как в реальной жизни.Куча машин, самолетов, вертолетов и водного транспорта, а также немыслимое количество приятно проведенного времени – все это GTA: San Andreas.",
+      "region": "Россия и страны СНГ",
+      "service": "Steam",
+      "contentType": "Учетная запись",
+      "discount": "15%",
+      "minSystem": {
+        "processor": "Intel Pentium III / AMD Athlon с тактовой частотой 1 ГГц",
+        "videoCard": "NVIDIA GeForce 3 с 64 МБ видеопамяти",
+        "ram": "256m",
+        "disk": "5gb",
+        "system": "Windows 2000 / XP"
+      },
+      "recSystem": {
+        "processor": "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
+        "videoCard": "NVIDIA GeForce 6 со 128 МБ видеопамяти",
+        "ram": "512mb",
+        "disk": "5gb",
+        "system": "Windows XP"
       }
     }
   ],

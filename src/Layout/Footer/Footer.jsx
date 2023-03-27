@@ -3,8 +3,13 @@ import SwitchLang from "../Header/SwitchLang/SwitchLang";
 import {BsInstagram} from "react-icons/bs"
 import {SlSocialVkontakte} from "react-icons/sl"
 import {BsDiscord} from "react-icons/bs"
+import {Link, useNavigate} from "react-router-dom";
+
 
 const Footer = () => {
+
+    const navigate = useNavigate()
+
     return (
         <footer className="footer">
             <div className="container">
@@ -23,13 +28,13 @@ const Footer = () => {
                     </ul>
                     <ul className="footer__list">
                         <h2 className="footer__list-title">Договор оферты</h2>
-                        <li className="footer__list-item">Каталог</li>
+                        <li className="footer__list-item"><Link to='/catalog/all'>Каталог</Link></li>
                         <li className="footer__list-item">Акции</li>
                         <li className="footer__list-item">Личный кабинет</li>
                     </ul>
                 </div>
                 <p className="footer__text">
-                    Все продаваемые ключи закупаются у официальных дистрибьюторови издателей. В том числе у 1С-СофтКлаб, Бука, Новый Диск и Enaza
+                    Все продаваемые ключи закупаются у официальных дистрибьюторовых издателей. В том числе у 1С-СофтКлаб, Бука, Новый Диск и Enaza
                 </p>
             </div>
             <div className="footer__bottom">

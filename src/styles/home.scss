@@ -1,4 +1,6 @@
 .home{
+  background-color: $black;
+  padding: 40px 0 80px;
   &__swiper{
     &-row{
       display: flex;
@@ -64,6 +66,127 @@
           color: black;
         }
       }
+    }
+  }
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 60px;
+    &-link{
+      width: 100%;
+      padding: 25px 0 28px;
+      border: 1px solid #FFFFFF1A;
+      border-radius: 15px;
+      text-align: center;
+      color: #366EDC;
+    }
+  }
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    &-title{
+      @include text(600, 0, 32px, white);
+      margin: 80px 0 20px;
+    }
+  }
+  &__card{
+    display: flex;
+    flex-direction: column;
+    &__new{
+      position: absolute;
+      padding: 7px 15px 10px 15px;
+      background-color: #FF4C00;
+      border-radius: 8px;
+    }
+    &-image{
+      width: 620px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    &-title{
+      margin: 20px 0;
+      cursor: pointer;
+      @include text(400, 0, 16px, white);
+    }
+    &-btns{
+      display: flex;
+      gap: 20px;
+    }
+  }
+  &__doubleSwipe{
+    padding: 40px;
+    width: 620px;
+    height: 360px;
+    display: flex;
+    position: relative;
+    margin: 90px 0 80px;
+    border-radius: 15px;
+    background: url("../assets/card1.png") center/cover no-repeat;
+    &-img{
+
+    }
+    &-title{
+      @include text(800, 0, 36px, white);
+      width: 379px;
+      text-align: start;
+      z-index: 5;
+    }
+    &-prices{
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      margin: 20px 0 80px;
+    }
+    &-price{
+      @include text(800, 0, 24px, white);
+    }
+    &-discount{
+      @include text(800, 0, 20px, #FFE817)
+    }
+    &-original{
+      @include text(600, 0, 20px, #FFFFFF80)
+    }
+    &-btns{
+      display: flex;
+      column-gap: 5px;
+    }
+    &-btn{
+      padding: 18px 40px;
+      @include text(800, 0, 18px, white);
+      background-color: #FFFFFF1A;
+      border-radius: 10px;
+      &:last-of-type{
+        background-color: transparent;
+        @include text(600, 0, 18px, white);
+      }
+      &:hover{
+        transform: scale(1.05);
+        background-color: white;
+        color: #77BE1D;
+      }
+    }
+    &-sec{
+      background: url("../assets/card2.png") center/cover no-repeat;
+    }
+    &-cont{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      z-index: 2;
+    }
+    &-imgCont{
+      position: absolute;
+      top: -57px;
+      right: 10px;
+      width: 270px;
+      height: 374px;
     }
   }
 }

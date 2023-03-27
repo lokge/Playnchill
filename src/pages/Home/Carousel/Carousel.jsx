@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,10 +8,12 @@ import Carousel2 from "../Carousel/CarouselContent/carousel2.png"
 import Carousel3 from "../Carousel/CarouselContent/carousel3.png"
 import nfsLogo from "../Carousel/CarouselContent/nfsLogo.png"
 
+
+
 const Carousel = () => {
 
     return (
-        <section className="home__swiper">
+        <div className="home__swiper">
             <div className="home__swiper-row">
                 <Swiper
                     rewind={true}
@@ -75,7 +77,7 @@ const Carousel = () => {
                     </SwiperSlide>
                 </Swiper>
             </div>
-        </section>
+        </div>
     );
 };
 
