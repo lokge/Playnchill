@@ -123,8 +123,9 @@
     border-top: 1px solid #13101B;
     padding: 30px 0;
     &-img{
-      max-width: 240px;
       height: 200px;
+      max-width: 240px;
+      cursor: pointer;
     }
     &-box{
       &:last-of-type{
@@ -138,7 +139,11 @@
       }
     }
     &-title{
-      @include text(500, 0, 28px, white)
+      @include text(500, 0, 28px, white);
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+      }
     }
     &-prices{
       display: flex;

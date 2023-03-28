@@ -24,7 +24,7 @@ const Home = () => {
                 <Carousel/>
                 <div className="home__row">
                     {
-                        games.slice(10, 15).map((item) => (
+                        games.slice(10, 14).map((item) => (
                             <Card key={item.id} item={item}/>
                         ))
                     }
@@ -35,7 +35,7 @@ const Home = () => {
 
                 <div className="home__row">
                     {
-                        games.slice(0, 10).map((item) => (
+                        games.slice(0, 12).map((item) => (
                             <Card key={item.id} item={item}/>
                         ))
                     }

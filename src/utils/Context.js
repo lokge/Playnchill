@@ -72,10 +72,12 @@ export const Context = (props) => {
         localStorage.setItem('basket', JSON.stringify(basket))
     }, [basket])
 
+
+
     const [products, setProducts] = useState([])
 
     const getAllProducts = () => {
-        axios('http://localhost:6969/products')
+        axios(`http://localhost:6969/products?`)
             .then(({data}) => setProducts(data))
             .catch((err) => console.log(err))
     }

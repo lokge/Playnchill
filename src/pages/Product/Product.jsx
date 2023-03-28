@@ -5,9 +5,19 @@ import {AiOutlineHeart} from "react-icons/ai"
 import {CustomContext} from "../../utils/Context";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import ProductImageCards from "./ProductImageCards/ProductImageCards";
+import Card from "../Card/Card";
 
 
 const Product = () => {
+
+    const [games, setGames] = useState([])
+    const [active, setActive] = useState(false)
+
+    useEffect(() => {
+        axios(`/products?`)
+            .then(({data}) => setGames(data))
+            .catch((err) => console.log('Данные не получены'))
+    },[])
 
     const [product, setProduct] = useState([])
     const {id, category} = useParams()
@@ -39,7 +49,9 @@ const Product = () => {
                                 ? <div className="product__check">
                                     <span style={{background: "#01CB62"}} className="product__checked"></span> <p className="product__true">В наличии</p>
                                 </div>
-                                : "Не в наличии"}
+                                : <div className="product__check">
+                                    <span style={{background: "red"}} className="product__checked"></span> <p className="product__true">Нет в наличии</p>
+                                </div>}
                             </span>
                             <div className="product__prices">
                                 <p className="product__price">{product.price}</p>
@@ -77,10 +89,26 @@ const Product = () => {
 
             <div className="product__descriptions">
                 <div className="container">
-                    <div className="product__header"></div>
+                    <div className="product__header">
+                        <button onClick={() => setActive(prev => !prev)} type="button" className={active ? "product__header-sect-active" : "product__header-sect"}>Описание товара</button>
+                        <button onClick={() => setActive(prev => !prev)} type="button" className={active ? "product__header-sect-active" : "product__header-sect"}>Системные требования</button>
+                        <button onClick={() => setActive(prev => !prev)} type="button" className={active ? "product__header-sect-active" : "product__header-sect"}>Активация</button>
+                    </div>
                     <div className="product__about">
                         <h5 className="product__about-title">О чем {product.title}?</h5>
                         <p className="product__about-text">{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div className="product__recs">
+                <div className="container">
+                    <h3 className="product__recs-title">Вам будет интересно</h3>
+                    <div className="product__recs-box">
+                        {
+                            games.slice(15, 19).map((item) => (
+                                <Card key={item.id} item={item}/>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

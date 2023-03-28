@@ -6,7 +6,7 @@
     column-gap: 60px;
   }
   &__main{
-    padding: 85px 0 80px;
+    padding: 85px 0 0;
     background: url("https://i.postimg.cc/VNZJLzRD/Rectangle-2512-1.png") center/cover no-repeat;
     &-imgCont{
       width: 350px;
@@ -96,6 +96,7 @@
     }
   }
   &__about{
+    padding: 57px 0 0;
     &-title{
       @include text(600, 0, 24px, white);
       margin-bottom: 15px;
@@ -105,9 +106,49 @@
     }
   }
   &__gallery{
+    padding: 95px 0 80px;
     &-card{
       border-radius: 15px;
       max-width: 307px;
+    }
+  }
+  &__descriptions{
+    padding-bottom: 70px;
+  }
+  &__header{
+    width: 100%;
+    display: flex;
+    column-gap: 50px;
+    padding: 22px 0;
+    border-bottom: 1px solid #13101B;
+    &-sect{
+      @include text(400, 0, 22px, #868686);
+      &-active{
+        position: relative;
+        @include text(400, 0, 22px, white);
+        &:before{
+          content: '';
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          bottom: -22px;
+          background-color: white;
+        }
+      }
+    }
+  }
+  &__recs{
+    padding-bottom: 80px;
+    &-title{
+      @include text(600, 0, 32px, white)
+    }
+    &-box{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      margin-top: 20px;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 }

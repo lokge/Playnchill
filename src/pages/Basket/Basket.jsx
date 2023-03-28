@@ -4,14 +4,14 @@ import {AiOutlineHeart} from "react-icons/ai"
 import {CgClose} from "react-icons/cg"
 import Qiwi from '../../assets/basket/qiwi.png'
 import WebMoney from '../../assets/basket/webMoney.png'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {CustomContext} from "../../utils/Context";
 
 const Basket = () => {
 
-    const {basket, plusBasket, minusBasket, delBasket} = useContext(CustomContext)
+    const navigate = useNavigate()
 
-    const {user} = useContext(CustomContext)
+    const {basket, plusBasket, minusBasket, delBasket, user} = useContext(CustomContext)
 
     const {t} = useTranslation()
 
@@ -46,10 +46,10 @@ const Basket = () => {
                                     {basket.map((item) => (
                                         <li key={item.id} className="basket__product">
                                             <div className="basket__product-box">
-                                                <img src={item.image} alt={item.title} className="basket__product-img"/>
+                                                <img  onClick={() => navigate(`/product/${item.id}`)} src={item.image} alt={item.title} className="basket__product-img"/>
                                             </div>
                                             <div className="basket__product-box">
-                                                <h3 className="basket__product-title">{item.title}</h3>
+                                                <h3 onClick={() => navigate(`/product/${item.id}`)} className="basket__product-title">{item.title}</h3>
                                                 <div className="basket__product-prices">
                                                     <p className="basket__product-price">{item.price}</p>
                                                     <p className="basket__product-disc">-{item.discount}</p>
