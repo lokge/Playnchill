@@ -21,7 +21,12 @@ const Product = () => {
     return (
         <section className="product">
             <div className="container">
-                <h2>{product.title}</h2>
+                <div className="product__main">
+                    <div className="product__block">
+                        <img src={product.image} alt={product.title} className="product__main-img"/>
+                    </div>
+                    <div className="product__block"></div>
+                </div>
             </div>
         </section>
     );

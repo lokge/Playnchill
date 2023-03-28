@@ -5,9 +5,11 @@ import axios from "../../utils/axios";
 import {Link} from "react-router-dom";
 import HomeCards from "./HomeCards/HomeCards";
 import DoubleSwipe from "./DoubleSwipe/DoubleSwipe";
+import {CustomContext} from "../../utils/Context";
 
 const Home = () => {
 
+    const {addBasket} = useContext(CustomContext)
     const [games, setGames] = useState([])
 
     useEffect(() => {

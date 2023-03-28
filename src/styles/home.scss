@@ -12,6 +12,7 @@
       position: absolute;
       left: 120px;
       top: 176px;
+      width: 221px;
       &-img{
         width: 221px;
       }
@@ -20,6 +21,9 @@
       position: absolute;
       left: 120px;
       top: 261px;
+      &-img{
+
+      }
     }
     &-description{
       @include text(400, 38px, 24px, white);
@@ -129,9 +133,6 @@
     margin: 90px 0 80px;
     border-radius: 15px;
     background: url("../assets/card1.png") center/cover no-repeat;
-    &-img{
-
-    }
     &-title{
       @include text(800, 0, 36px, white);
       width: 379px;
