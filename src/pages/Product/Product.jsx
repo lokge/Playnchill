@@ -4,6 +4,7 @@ import {useParams} from "react-router-dom";
 import {AiOutlineHeart} from "react-icons/ai"
 import {CustomContext} from "../../utils/Context";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import ProductImageCards from "./ProductImageCards/ProductImageCards";
 
 
 const Product = () => {
@@ -70,21 +71,7 @@ const Product = () => {
                             </div>
                         </div>
                     </div>
-                    <a
-                        data-fancybox="gallery"
-                        data-src="https://lipsum.app/id/2/1600x1200"
-                        data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
-                    >
-                        <img src="https://lipsum.app/id/2/200x150" width="200" height="150" alt="" />
-                    </a>
-
-                    <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
-                        <img src="https://lipsum.app/id/3/200x150" width="200" height="150" alt="" />
-                    </a>
-
-                    <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1600x1200">
-                        <img src="https://lipsum.app/id/4/200x150" width="200" height="150" alt="" />
-                    </a>
+                    <ProductImageCards product={product}/>
                 </div>
             </div>
 

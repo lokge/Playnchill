@@ -104,4 +104,16 @@
       @include text(400, 0, 17px, white);
     }
   }
+  &__gallery{
+    &-card{
+      border-radius: 15px;
+      max-width: 307px;
+    }
+  }
+}
+#gallery{
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
 }
