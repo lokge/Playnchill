@@ -1,0 +1,107 @@
+.product{
+  height: 100%;
+  background-color: $black;
+  &__container{
+    display: flex;
+    column-gap: 60px;
+  }
+  &__main{
+    padding: 85px 0 80px;
+    background: url("https://i.postimg.cc/VNZJLzRD/Rectangle-2512-1.png") center/cover no-repeat;
+    &-imgCont{
+      width: 350px;
+      border-radius: 15px;
+    }
+    &-img{
+      border-radius: 15px;
+      width: 350px;
+    }
+  }
+  &__title{
+    @include text(800, 0, 40px, white);
+  }
+  &__check{
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+  }
+  &__checked{
+    min-height: 8px !important;
+    min-width: 8px !important;
+    border-radius: 50%;
+  }
+  &__true{
+    @include text(400, 0, 14px, white);
+  }
+  &__prices{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+  &__price{
+    @include text(700, 0, 36px, white);
+  }
+  &__discount{
+    @include text(700, 0, 24px, #77BE1D)
+  }
+  &__original{
+    @include text(700, 0, 24px, #FFFFFF4D)
+  }
+  &__btns{
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin: 20px 0 40px;
+  }
+  &__btn{
+    padding: 23px 40px;
+    border-radius: 15px;
+    background-color: #77BE1D;
+    @include text(600, 0, 18px, white);
+    &:hover{
+      background-color: #53981d;
+    }
+    &:nth-of-type(2){
+      background-color: transparent;
+      border: 2px solid #FFFFFF1A;
+    }
+    &:last-of-type{
+      width: 50px;
+      height: 50px;
+      padding: 0;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background-color: #FFFFFF0D;
+    }
+    &-icon{
+      &:hover{
+        fill: red;
+      }
+    }
+  }
+  &__description{
+    display: flex;
+    column-gap: 75px;
+    &-genre{
+      @include text(400, 0, 18px, white);
+      margin-bottom: 8px;
+    }
+    &-ans{
+      @include text(600, 0, 20px, white);
+    }
+  }
+  &__about{
+    &-title{
+      @include text(600, 0, 24px, white);
+      margin-bottom: 15px;
+    }
+    &-text{
+      @include text(400, 0, 17px, white);
+    }
+  }
+}
