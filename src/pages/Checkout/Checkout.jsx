@@ -18,7 +18,7 @@ const Checkout = () => {
     const navigate = useNavigate()
 
     //Получение данных с корзины
-    const {basket, delBasket, user} = useContext(CustomContext)
+    const {basket, delBasket, user, setBasket} = useContext(CustomContext)
 
     const {reset, register, handleSubmit} = useForm()
 
@@ -27,18 +27,18 @@ const Checkout = () => {
             ...data,
             games: basket,
             price: basket.reduce((acc, rec) => acc + rec.count * rec.price, 0),
-            user: user
+            user: user,
+            date: new Date()
         }).then(() => console.log('Успешно добавлен'))
 
         await axios.patch(`http://localhost:6969/users/${user.id}`, {
-            games : [
-                ...user.games,
-                {
-                    games: basket,
-                    price: basket.reduce((acc, rec) => acc + rec.count * rec.price, 0)
-                }
-            ]}
-        ).then(() => console.log('Успешно добавлен'))
+            games : {
+                games: basket,
+                price: basket.reduce((acc, rec) => acc + rec.count * rec.price, 0),
+                date: new Date()
+            }
+        }).then(() => console.log('Успешно добавлен'))
+
 
         await navigate('/order')
         await reset()

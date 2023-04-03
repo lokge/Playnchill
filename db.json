@@ -679,35 +679,82 @@
   ],
   "users": [
     {
-      "email": "Erkin@gmail.com",
-      "password": "$2a$10$8GXlbsC2WAt7XA1/UfMO0uDczmL7.g548hn3YnoHV1h6k8G.ks5Qq",
-      "id": 1,
-      "games": []
-    },
-    {
-      "email": "asd@c.c",
-      "password": "$2a$10$.VTL4lC/WJa0N388.PnDie8C3NK0ZXR95auZN0idwIRmBJzJRpdoC",
-      "id": 2,
-      "games": []
-    },
-    {
-      "email": "asd@s.s",
-      "password": "$2a$10$qRzezEJwh60D1LMpw2gEGOc72UgiMoFggr7lJsZMyTx1RjYys6Y8u",
-      "id": 3,
-      "games": []
-    },
-    {
-      "email": "loki@gmail.com",
-      "password": "$2a$10$vAMkk1fV27GIOU71M71b1ur/gYSucU3takEHbIwhWIErvp1LKlUsO",
-      "id": 4,
-      "games": []
-    },
-    {
       "email": "lokge@gmail.com",
-      "password": "$2a$10$i80hwtYNcZJxEkyJrF2twuQMQFvTe6J0iwg7hzOu9kyqTttpancH2",
-      "login": "Lokge",
-      "id": 5,
-      "games": []
+      "password": "$2a$10$PnISW28LkV.NRxXqapVIFelegAsIJKANo7agrqh65lxi0ecc/eJIe",
+      "login": "lokge",
+      "id": 1,
+      "games": {
+        "games": [
+          {
+            "id": 13,
+            "image": "https://i.playground.ru/e/IjOWXjBCKky5tXE-gSVe7g.jpeg?200x277",
+            "bigImage": "",
+            "bannerImage": "",
+            "logoImage": "",
+            "update": "true",
+            "title": "Dota 2",
+            "category": "strategy",
+            "availability": "true",
+            "price": "800",
+            "description": "Мультиплеерная RTS/RPG, фундаментом для которой стал мод Defense of the Ancients для WarCraft 3.\n\nГеймплей совсем не изменился. Dota 2 играется и чувствуется, как ваша любимая Defense of the Ancients – при ней больше 100 героев, куча режимов игры, битвы «пять на пять» с блужданием по карте, сбором предметов, дежурной прокачкой и прочими ролевыми элементами. На одиночную кампанию не рассчитывайте – только онлайновые битвы.В качестве онлайновой платформы используется паровая технология Steam. Но достижениями и поиском матчей/игроков по уровню их мастерства дело не ограничивается. Valve Software усовершенствовала Steamworks специально для Dota 2. Касается это в первую очередь всяких социальных вещей и активности в комьюнити. За дельные советы, данные на форуме, или написанный гид по управлению тем или иным персонажем вы будете получать награды, которые будут видны простому народу.",
+            "smallDesc": "",
+            "region": "Россия и страны СНГ",
+            "service": "Steam",
+            "contentType": "Учетная запись",
+            "discount": "15%",
+            "minSystem": [
+              "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
+              "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
+              "4gb",
+              "60gb",
+              "Windows 7 или новее"
+            ],
+            "recSystem": [
+              "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
+              "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
+              "4gb",
+              "60gb",
+              "Windows 7 или новее"
+            ],
+            "count": 2
+          },
+          {
+            "id": 18,
+            "image": "https://i.playground.ru/e/RhkBTF7F2UwkE-EvTBU6cA.jpeg?200x277",
+            "bigImage": "",
+            "bannerImage": "",
+            "logoImage": "",
+            "update": "false",
+            "title": "Need for Speed: Underground 2",
+            "category": "race",
+            "availability": "true",
+            "price": "699",
+            "description": "Вторая игра из безусловно удачной серии Need For Speed: Underground, посвещенная уличным гонкам. Ощущение реальной скорости, увеличенные возможности по тюнингу машин, переработанная графическая основа и более 30-ти прекрасных машин - вот то, ради чего её стоит ждать.",
+            "smallDesc": "",
+            "region": "Россия и страны СНГ",
+            "service": "Epic Games",
+            "contentType": "Учетная запись",
+            "discount": "15%",
+            "minSystem": [
+              "Intel Pentium III с тактовой частотой 933 МГц",
+              "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
+              "256mb",
+              "2gb",
+              "Windows 98/98SE/ME/2000/XP"
+            ],
+            "recSystem": [
+              "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
+              "NVIDIA GeForce 4 / AMD Radeon 9000 со 128 Мб видеопамяти",
+              "512mb",
+              "2gb",
+              "Windows XP"
+            ],
+            "count": 1
+          }
+        ],
+        "price": 2299,
+        "date": "2023-04-03T08:54:38.439Z"
+      }
     }
   ],
   "buys": [
@@ -784,11 +831,12 @@
       ],
       "price": 2299,
       "user": {
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxva2dlQGdtYWlsLmNvbSIsImlhdCI6MTY4MDUwOTM0NiwiZXhwIjoxNjgwNTEyOTQ2LCJzdWIiOiI1In0.Ox9YTbnoDorAlCUZ_ISNZh_PDiKTD5AaztZ9QTTnozs",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxva2dlQGdtYWlsLmNvbSIsImlhdCI6MTY4MDUxMjAxNCwiZXhwIjoxNjgwNTE1NjE0LCJzdWIiOiIxIn0.Bz6sY39PevV1DsYZJSPg8-ZaUcVGS0cSltpHAwUu_ZE",
         "email": "lokge@gmail.com",
-        "login": "Lokge",
-        "id": 5
+        "login": "lokge",
+        "id": 1
       },
+      "date": "2023-04-03T08:54:06.246Z",
       "id": 1
     },
     {
@@ -864,11 +912,12 @@
       ],
       "price": 2299,
       "user": {
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxva2dlQGdtYWlsLmNvbSIsImlhdCI6MTY4MDUwOTM0NiwiZXhwIjoxNjgwNTEyOTQ2LCJzdWIiOiI1In0.Ox9YTbnoDorAlCUZ_ISNZh_PDiKTD5AaztZ9QTTnozs",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxva2dlQGdtYWlsLmNvbSIsImlhdCI6MTY4MDUxMjAxNCwiZXhwIjoxNjgwNTE1NjE0LCJzdWIiOiIxIn0.Bz6sY39PevV1DsYZJSPg8-ZaUcVGS0cSltpHAwUu_ZE",
         "email": "lokge@gmail.com",
-        "login": "Lokge",
-        "id": 5
+        "login": "lokge",
+        "id": 1
       },
+      "date": "2023-04-03T08:54:38.405Z",
       "id": 2
     }
   ]
