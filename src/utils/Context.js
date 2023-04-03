@@ -95,7 +95,7 @@ export const Context = (props) => {
     const [products, setProducts] = useState([])
 
     const getAllProducts = () => {
-        axios(`http://localhost:6969/products?`)
+        axios(`/products`)
             .then(({data}) => setProducts(data))
             .catch((err) => console.log(err))
     }

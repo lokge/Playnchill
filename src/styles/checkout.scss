@@ -5,13 +5,20 @@
   background-color: $black;
   &__row{
     display: flex;
+    column-gap: 35px;
+    flex-wrap: wrap;
+  }
+  &__content{
+    max-width: 60%;
+    min-width: 60%;
   }
   &__form{
+    width: 100%;
     &-title{
       margin: 15px;
     }
     &-block{
-      width: 850px;
+      width: 100%;
       padding: 10px;
       border-radius: 10px;
       border: 2px solid #FFFFFF1A;
@@ -56,6 +63,101 @@
     }
     &-radio{
       margin: 5px ;
+    }
+  }
+  &__aside{
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #FFFFFF1A;
+    &-content{
+      max-width: 441px;
+      width: 100%;
+    }
+    &-title{
+      margin-bottom: 15px;
+      @include text(600, 0, 20px, white);
+    }
+    &-imgCont{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0 10px;
+    }
+    &-gameTitle{
+      cursor: pointer;
+      @include text(700, 0, 24px, white);
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    &-prices{
+      width: 100%;
+      display: flex;
+      padding: 5px 0;
+      justify-content: space-between;
+      &:first-of-type{
+        border-bottom: 2px solid #FFFFFF1A;
+      }
+    }
+    &-price{
+      @include text(300, 0, 18px, white)
+    }
+    &-final{
+      @include text(600, 0, 20px, white)
+    }
+    &-email{
+      width: 100%;
+      display: flex;
+      column-gap: 15px;
+      align-items: start;
+      margin: 15px 0;
+    }
+    &-sendEmail{
+      @include text(600, 0, 17px, #747474)
+    }
+    &-btns{
+      width: 100%;
+      padding: 20px 15px;
+    }
+    &-btn{
+      width: 100%;
+      color: white;
+      padding: 15px 0;
+      margin-top: 10px;
+      border-radius: 5px;
+      background-color: #77BE1D;
+      &-text{
+        @include text(500, 0, 14px, #747474)
+      }
+    }
+    &-icon{
+      cursor: pointer;
+    }
+    &-small{
+      display: flex;
+      justify-content: space-between;
+      &-content{
+        display: flex;
+        gap: 10px;
+      }
+      &-imgCont{
+        max-width: 150px !important;
+        margin-bottom: 15px;
+      }
+      &-img{
+        max-width: 150px !important;
+      }
+      &-gameTitle{
+        cursor: pointer;
+        @include text(500, 0, 16px, white);
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      &-price{
+        @include text(300, 0, 13px, white);
+      }
     }
   }
 }

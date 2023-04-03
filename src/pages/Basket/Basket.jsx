@@ -11,7 +11,7 @@ const Basket = () => {
 
     const navigate = useNavigate()
 
-    const {basket, plusBasket, minusBasket, delBasket, user, favorite, addFavorite} = useContext(CustomContext)
+    const {basket, plusBasket, minusBasket, delBasket, user, addFavorite} = useContext(CustomContext)
 
     const {t} = useTranslation()
 
@@ -150,13 +150,7 @@ const Basket = () => {
                                     basket.length ? <p>{basket.length} {t('basket.asideTotal')}</p> : <p>Корзина пуста</p>
                                 }
                             </span>
-                            <p className="basket__aside-total">
-                                {
-                                    basket.map((item) => (
-                                        <span key={item.id}>{item.price * item.count}</span>
-                                    ))
-                                }
-                            </p>
+                            <p className="basket__aside-total">{basket.reduce((acc, rec) => acc + rec.count * rec.price, 0)} Р</p>
                             <button onClick={() => navigate('/checkout')} type="button" className="basket__aside-btn">{t('basket.asideBtn')}</button>
                             <div className="basket__aside-label">
                                 {t('basket.asideCheck')} <a href="https://www.youtube.com/watch?v=1GpkiX13OHw&t=1376s" className="basket__aside-link">
