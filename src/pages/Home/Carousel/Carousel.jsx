@@ -11,7 +11,7 @@ const Carousel = () => {
 
     const [games, setGames] = useState([])
 
-    const {addBasket} = useContext(CustomContext)
+    const {basket, addBasket, addFavorite} = useContext(CustomContext)
 
     useEffect(() => {
         axios(`/products?`)
@@ -46,7 +46,7 @@ const Carousel = () => {
                                     </div>
                                     <div className="home__swiper-btns">
                                         <button type='button' onClick={() => addBasket(item)} className="home__swiper-btn">В корзину</button>
-                                        <button className="home__swiper-btn">В избранное</button>
+                                        <button onClick={() => addFavorite(item)} className="home__swiper-btn">В избранное</button>
                                     </div>
                                 </div>
                                   </SwiperSlide>

@@ -17,20 +17,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel® Core™ 2 Q6600 | AMD Phenom 9850",
-        "videoCard": "NVIDIA® 9800 GT / AMD HD 4870",
-        "ram": "4gb",
-        "disk": "72gb",
-        "system": "Windows 7 / 8.1 64-разрядная"
-      },
-      "recSystem": {
-        "processor": "i5",
-        "videoCard": "gtx",
-        "ram": "4gb",
-        "disk": "72gb",
-        "system": "Windows"
-      }
+      "minSystem": [
+        "Intel® Core™ 2 Q6600 | AMD Phenom 9850",
+        "NVIDIA® 9800 GT / AMD HD 4870",
+        "4gb",
+        "72gb",
+        "Windows 7 / 8.1 64-разрядная"
+      ],
+      "recSystem": [
+        "i5",
+        "gtx",
+        "4gb",
+        "72gb",
+        "Windows"
+      ]
     },
     {
       "id": 2,
@@ -49,20 +49,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel Core i3-3210",
-        "videoCard": "Intel HD Graphics 4000",
-        "ram": "2gb",
-        "disk": "1gb",
-        "system": "Windows 7, 8.1,"
-      },
-      "recSystem": {
-        "processor": "Intel Core i5-4690",
-        "videoCard": "GeForce 700 Series",
-        "ram": "4gb",
-        "disk": "72gb",
-        "system": "Windows 7, 8.1, 10;"
-      }
+      "minSystem": [
+        "Intel Core i3-3210",
+        "Intel HD Graphics 4000",
+        "2gb",
+        "1gb",
+        "Windows 7, 8.1,"
+      ],
+      "recSystem": [
+        "Intel Core i5-4690",
+        "GeForce 700 Series",
+        "4gb",
+        "72gb",
+        "Windows 7, 8.1, 10;"
+      ]
     },
     {
       "id": 3,
@@ -81,20 +81,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "0",
-      "minSystem": {
-        "processor": "800 МГц Intel Pentium III | 800 МГц AMD Athlon",
-        "videoCard": "32 МБ видеокарта с совместимыми с DirectX 9.0 драйверами («GeForce» или лучше)",
-        "ram": "2gb",
-        "disk": "1gb",
-        "system": "Windows 2000/XP"
-      },
-      "recSystem": {
-        "processor": "Intel Pentium G2020 @ 2.90GHz",
-        "videoCard": "GeForce GT 630",
-        "ram": "4gb",
-        "disk": "2gb",
-        "system": "Windows 98/XP"
-      }
+      "minSystem": [
+        "800 МГц Intel Pentium III | 800 МГц AMD Athlon",
+        "32 МБ видеокарта с совместимыми с DirectX 9.0 драйверами («GeForce» или лучше)",
+        "2gb",
+        "1gb",
+        "Windows 2000/XP"
+      ],
+      "recSystem": [
+        "Intel Pentium G2020 @ 2.90GHz",
+        "GeForce GT 630",
+        "4gb",
+        "2gb",
+        "Windows 98/XP"
+      ]
     },
     {
       "id": 4,
@@ -113,20 +113,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "P-3 с тактовой частотой 450 МГц",
-        "videoCard": "с 16 МБ видеопамяти, поддержка Direct3D",
-        "ram": "64mb",
-        "disk": "500mb",
-        "system": "Windows 98 / ME / 2000 / XP"
-      },
-      "recSystem": {
-        "processor": "P-3 с тактовой частотой 700 МГц",
-        "videoCard": "с 32 МБ видеопамяти, поддержка Direct3D",
-        "ram": "128mb",
-        "disk": "500mb",
-        "system": "Windows 98 / ME / 2000 / XP"
-      }
+      "minSystem": [
+        "P-3 с тактовой частотой 450 МГц",
+        "с 16 МБ видеопамяти, поддержка Direct3D",
+        "64mb",
+        "500mb",
+        "Windows 98 / ME / 2000 / XP"
+      ],
+      "recSystem": [
+        "P-3 с тактовой частотой 700 МГц",
+        "с 32 МБ видеопамяти, поддержка Direct3D",
+        "128mb",
+        "500mb",
+        "Windows 98 / ME / 2000 / XP"
+      ]
     },
     {
       "id": 5,
@@ -145,20 +145,20 @@
       "service": "Epic Games",
       "contentType": "Ключ",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel Pentium 4 с тактовой частотой 1,4 ГГц",
-        "videoCard": "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Мб видеопамяти",
-        "ram": "256mb",
-        "disk": "3gb",
-        "system": "Windows 2000 / XP"
-      },
-      "recSystem": {
-        "processor": "Intel Pentium 4 с тактовой частотой 1,8 ГГц",
-        "videoCard": "С 64 Мб видеопамяти",
-        "ram": "512gb",
-        "disk": "3gb",
-        "system": "Windows 2000 / XP"
-      }
+      "minSystem": [
+        "Intel Pentium 4 с тактовой частотой 1,4 ГГц",
+        "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Мб видеопамяти",
+        "256mb",
+        "3gb",
+        "Windows 2000 / XP"
+      ],
+      "recSystem": [
+        "Intel Pentium 4 с тактовой частотой 1,8 ГГц",
+        "С 64 Мб видеопамяти",
+        "512gb",
+        "3gb",
+        "Windows 2000 / XP"
+      ]
     },
     {
       "id": 6,
@@ -177,20 +177,20 @@
       "service": "Steam",
       "contentType": "Ключ",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
-        "videoCard": "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
-        "ram": "8gb",
-        "disk": "80gb",
-        "system": "64-разрядная Windows 10"
-      },
-      "recSystem": {
-        "processor": "Intel i7-3820 3,6 ГГц",
-        "videoCard": "NVidia GTX 970 / NVidia GTX 1060 с 3 ГБ /",
-        "ram": "12gb",
-        "disk": "80gb",
-        "system": "64-разрядная Windows 10"
-      }
+      "minSystem": [
+        "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
+        "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
+        "8gb",
+        "80gb",
+        "64-разрядная Windows 10"
+      ],
+      "recSystem": [
+        "Intel i7-3820 3,6 ГГц",
+        "NVidia GTX 970 / NVidia GTX 1060 с 3 ГБ /",
+        "12gb",
+        "80gb",
+        "64-разрядная Windows 10"
+      ]
     },
     {
       "id": 7,
@@ -209,20 +209,20 @@
       "service": "Steam",
       "contentType": "Ключ",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
-        "videoCard": "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
-        "ram": "8gb",
-        "disk": "80gb",
-        "system": "64-разрядная Windows 10"
-      },
-      "recSystem": {
-        "processor": "Intel i7-3820 3,6 ГГц",
-        "videoCard": "NVidia GTX 970 / NVidia GTX 1060 с 3 ГБ /",
-        "ram": "12gb",
-        "disk": "80gb",
-        "system": "64-разрядная Windows 10"
-      }
+      "minSystem": [
+        "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
+        "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
+        "8gb",
+        "80gb",
+        "64-разрядная Windows 10"
+      ],
+      "recSystem": [
+        "Intel i7-3820 3,6 ГГц",
+        "NVidia GTX 970 / NVidia GTX 1060 с 3 ГБ /",
+        "12gb",
+        "80gb",
+        "64-разрядная Windows 10"
+      ]
     },
     {
       "id": 8,
@@ -241,20 +241,20 @@
       "service": "Steam",
       "contentType": "Ключ",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
-        "videoCard": "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
-        "ram": "8gb",
-        "disk": "80gb",
-        "system": "64-разрядная Windows 10"
-      },
-      "recSystem": {
-        "processor": "Intel i7-3820 3,6 ГГц",
-        "videoCard": "NVidia GTX 970 / NVidia GTX 1060 с 3 ГБ /",
-        "ram": "12gb",
-        "disk": "80gb",
-        "system": "64-разрядная Windows 10"
-      }
+      "minSystem": [
+        "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
+        "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
+        "8gb",
+        "80gb",
+        "64-разрядная Windows 10"
+      ],
+      "recSystem": [
+        "Intel i7-3820 3,6 ГГц",
+        "NVidia GTX 970 / NVidia GTX 1060 с 3 ГБ /",
+        "12gb",
+        "80gb",
+        "64-разрядная Windows 10"
+      ]
     },
     {
       "id": 9,
@@ -273,24 +273,24 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel Core 2 Duo E6750 2,66 ГГц / AMD Athlon 64 X2 6000+",
-        "videoCard": "GeForce GT 740 2 ГБ / Radeon HD 5770 1 ГБ",
-        "ram": "1gb",
-        "disk": "500mb",
-        "system": "6Windows XP / Vista / 7 / 8 / 8.1 / 10"
-      },
-      "recSystem": {
-        "processor": "Intel Core 2 Quad Q9300 2,5 ГГц / AMD A10-5800K APU 3,8 ГГц",
-        "videoCard": "GeForce GTX 460 1 ГБ / Radeon HD 7770 1 ГБ",
-        "ram": "2gb",
-        "disk": "500mb",
-        "system": "Windows XP / Vista / 7 / 8 / 8.1 / 10"
-      }
+      "minSystem": [
+        "Intel Core 2 Duo E6750 2,66 ГГц / AMD Athlon 64 X2 6000+",
+        "GeForce GT 740 2 ГБ / Radeon HD 5770 1 ГБ",
+        "1gb",
+        "500mb",
+        "6Windows XP / Vista / 7 / 8 / 8.1 / 10"
+      ],
+      "recSystem": [
+        "Intel Core 2 Quad Q9300 2,5 ГГц / AMD A10-5800K APU 3,8 ГГц",
+        "GeForce GTX 460 1 ГБ / Radeon HD 7770 1 ГБ",
+        "2gb",
+        "500mb",
+        "Windows XP / Vista / 7 / 8 / 8.1 / 10"
+      ]
     },
     {
       "id": 10,
-      "image": "https://img.webnovel.com/bookcover/18745335806988105/300/300.jpg?updateTime=1608048852903",
+      "image": "https://m.media-amazon.com/images/M/MV5BMWU0Y2JhOGEtNzU4ZS00MTljLThhOWItYzA4ZTg0ZDU3MGQ0XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg",
       "bigImage": "",
       "bannerImage": "",
       "logoImage":  "",
@@ -305,20 +305,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel Core i3-4330",
-        "videoCard": "Intel HD Graphics 4600",
-        "ram": "1gb",
-        "disk": "4gb",
-        "system": "Windows 10"
-      },
-      "recSystem": {
-        "processor": "Intel Core i3-4330",
-        "videoCard": "NVIDIA GTX 650",
-        "ram": "4gb",
-        "disk": "4gb",
-        "system": "64-разрядная Windows 10"
-      }
+      "minSystem": [
+        "Intel Core i3-4330",
+        "Intel HD Graphics 4600",
+        "1gb",
+        "4gb",
+        "Windows 10"
+      ],
+      "recSystem": [
+        "Intel Core i3-4330",
+        "NVIDIA GTX 650",
+        "4gb",
+        "4gb",
+        "64-разрядная Windows 10"
+      ]
     },
     {
       "id": 11,
@@ -341,20 +341,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "С тактовой частотой 1,7 ГГц",
-        "videoCard": "С поддержкой DirectX 8.1 и SSE",
-        "ram": "512mb",
-        "disk": "3gb",
-        "system": "Windows XP / Vista / 7"
-      },
-      "recSystem": {
-        "processor": "Pentium 4 с тактовой частотой 3 ГГц или лучше",
-        "videoCard": "С поддержкой DirectX 9",
-        "ram": "1gb",
-        "disk": "5gb",
-        "system": "Windows XP / Vista / 7"
-      }
+      "minSystem": [
+        "С тактовой частотой 1,7 ГГц",
+        "С поддержкой DirectX 8.1 и SSE",
+        "512mb",
+        "3gb",
+        "Windows XP / Vista / 7"
+      ],
+      "recSystem": [
+        "Pentium 4 с тактовой частотой 3 ГГц или лучше",
+        "С поддержкой DirectX 9",
+        "1gb",
+        "5gb",
+        "Windows XP / Vista / 7"
+      ]
     },
     {
       "id": 12,
@@ -373,20 +373,20 @@
       "service": "Steam",
       "contentType": "Ключ",
       "discount": "15%",
-      "minSystem": {
-        "processor": "AMD Athlon64 X2 с тактовой частотой 2.1 ГГц / Intel Core 2 Duo с тактовой частотой 1.86 ГГц",
-        "videoCard": "AMD Radeon HD 2600 XT / NVIDIA GeForce 8600 с 512 Мб видеопамяти",
-        "ram": "1 Гб (XP) / 2 Гб (Vista)",
-        "disk": "12gb",
-        "system": " Windows XP (SP3),/Vista/7/8 (x86/64)"
-      },
-      "recSystem": {
-        "processor": "4-ядерный AMD Phenom II X4 955 / Intel Core i5-750",
-        "videoCard": "AMD Radeon HD 4870 / NVIDIA GeForce GTX 480 с 1 Гб видеопамяти",
-        "ram": "4gb",
-        "disk": "12gb",
-        "system": "Windows Vista/7/8"
-      }
+      "minSystem": [
+        "AMD Athlon64 X2 с тактовой частотой 2.1 ГГц / Intel Core 2 Duo с тактовой частотой 1.86 ГГц",
+        "AMD Radeon HD 2600 XT / NVIDIA GeForce 8600 с 512 Мб видеопамяти",
+        "1 Гб (XP) / 2 Гб (Vista)",
+        "12gb",
+        " Windows XP (SP3),/Vista/7/8 (x86/64)"
+      ],
+      "recSystem": [
+        "4-ядерный AMD Phenom II X4 955 / Intel Core i5-750",
+        "AMD Radeon HD 4870 / NVIDIA GeForce GTX 480 с 1 Гб видеопамяти",
+        "4gb",
+        "12gb",
+        "Windows Vista/7/8"
+      ]
     },
     {
       "id": 13,
@@ -405,20 +405,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
-        "videoCard": "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
-        "ram": "4gb",
-        "disk": "60gb",
-        "system": "Windows 7 или новее"
-      },
-      "recSystem": {
-        "processor": "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
-        "videoCard": "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
-        "ram": "4gb",
-        "disk": "60gb",
-        "system": "Windows 7 или новее"
-      }
+      "minSystem": [
+        "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
+        "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
+        "4gb",
+        "60gb",
+        "Windows 7 или новее"
+      ],
+      "recSystem": [
+        "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
+        "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
+        "4gb",
+        "60gb",
+        "Windows 7 или новее"
+      ]
     },
     {
       "id": 14,
@@ -437,20 +437,20 @@
       "service": "Epic Games",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "с тактовой частотой 2.0 ГГц",
-        "videoCard": "с 128 МБ видеопамяти и поддержкой Shader Model 2.0",
-        "ram": "2,5gb",
-        "disk": "200mb",
-        "system": "Windows XP / Vista / 7"
-      },
-      "recSystem": {
-        "processor": "двухъядерный с тактовой частотой 3.0 ГГц",
-        "videoCard": "с 256 МБ видеопамяти и поддержкой Shader Model 2.0",
-        "ram": "4gb",
-        "disk": "200mb",
-        "system": "Windows 7 / 8 / 8.1 /10"
-      }
+      "minSystem": [
+        "с тактовой частотой 2.0 ГГц",
+        "с 128 МБ видеопамяти и поддержкой Shader Model 2.0",
+        "2,5gb",
+        "200mb",
+        "Windows XP / Vista / 7"
+      ],
+      "recSystem": [
+        "двухъядерный с тактовой частотой 3.0 ГГц",
+        "с 256 МБ видеопамяти и поддержкой Shader Model 2.0",
+        "4gb",
+        "200mb",
+        "Windows 7 / 8 / 8.1 /10"
+      ]
     },
     {
       "id": 15,
@@ -469,20 +469,20 @@
       "service": "Epic Games",
       "contentType": "Учетная запись",
       "discount": "8%",
-      "minSystem": {
-        "processor": "Intel Core i5 6600K / AMD FX-6350",
-        "videoCard": "nVidia GeForce GTX 660 2 ГБ / AMD Radeon HD 7850 2 ГБ",
-        "ram": "8gb",
-        "disk": "50gb",
-        "system": "64-разрядные Windows 7, Windows 8.1 или Windows 10"
-      },
-      "recSystem": {
-        "processor": "Intel Core i7 4790 / AMD FX 8350 Wraith",
-        "videoCard": "nVidia GeForce GTX 1060 3 ГБ / AMD Radeon RX 480 4 ГБ",
-        "ram": "16gb",
-        "disk": "50gb",
-        "system": "64-разрядная Windows 10 или выше"
-      }
+      "minSystem":[
+        "Intel Core i5 6600K / AMD FX-6350",
+        "nVidia GeForce GTX 660 2 ГБ / AMD Radeon HD 7850 2 ГБ",
+        "8gb",
+        "50gb",
+        "64-разрядные Windows 7, Windows 8.1 или Windows 10"
+      ],
+      "recSystem": [
+        "Intel Core i7 4790 / AMD FX 8350 Wraith",
+        "nVidia GeForce GTX 1060 3 ГБ / AMD Radeon RX 480 4 ГБ",
+        "16gb",
+        "50gb",
+        "64-разрядная Windows 10 или выше"
+      ]
     },
     {
       "id": 16,
@@ -501,20 +501,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "8%",
-      "minSystem": {
-        "processor": "Intel Core i5 6600K / AMD FX-6350",
-        "videoCard": "nVidia GeForce GTX 660 2 ГБ / AMD Radeon HD 7850 2 ГБ",
-        "ram": "8gb",
-        "disk": "50gb",
-        "system": "64-разрядные Windows 7, Windows 8.1 или Windows 10"
-      },
-      "recSystem": {
-        "processor": "Intel Core i7 4790 / AMD FX 8350 Wraith",
-        "videoCard": "nVidia GeForce GTX 1060 3 ГБ / AMD Radeon RX 480 4 ГБ",
-        "ram": "16gb",
-        "disk": "50gb",
-        "system": "64-разрядная Windows 10 или выше"
-      }
+      "minSystem": [
+        "Intel Core i5 6600K / AMD FX-6350",
+        "nVidia GeForce GTX 660 2 ГБ / AMD Radeon HD 7850 2 ГБ",
+        "8gb",
+        "50gb",
+        "64-разрядные Windows 7, Windows 8.1 или Windows 10"
+      ],
+      "recSystem": [
+        "Intel Core i7 4790 / AMD FX 8350 Wraith",
+        "nVidia GeForce GTX 1060 3 ГБ / AMD Radeon RX 480 4 ГБ",
+        "16gb",
+        "50gb",
+        "64-разрядная Windows 10 или выше"
+      ]
     },
     {
       "id": 17,
@@ -533,20 +533,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel Core i3-4340 / AMD FX-6300",
-        "videoCard": "NVIDIA GeForce GTX 960 2 ГБ / AMD Radeon R7 370 2 ГБ",
-        "ram": "8gb",
-        "disk": "40gb",
-        "system": "64-разрядная Windows 10"
-      },
-      "recSystem": {
-        "processor": "Intel Core i5-7600K / AMD Ryzen 5-1600",
-        "videoCard": "NVIDIA GeForce GTX 1060 3 ГБ / AMD Radeon RX 580 4 ГБ",
-        "ram": "16gb",
-        "disk": "40gb",
-        "system": "64-разрядная Windows 10"
-      }
+      "minSystem": [
+        "Intel Core i3-4340 / AMD FX-6300",
+        "NVIDIA GeForce GTX 960 2 ГБ / AMD Radeon R7 370 2 ГБ",
+        "8gb",
+        "40gb",
+        "64-разрядная Windows 10"
+      ],
+      "recSystem": [
+        "Intel Core i5-7600K / AMD Ryzen 5-1600",
+        "NVIDIA GeForce GTX 1060 3 ГБ / AMD Radeon RX 580 4 ГБ",
+        "16gb",
+        "40gb",
+        "64-разрядная Windows 10"
+      ]
     },
     {
       "id": 18,
@@ -565,20 +565,20 @@
       "service": "Epic Games",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel Pentium III с тактовой частотой 933 МГц",
-        "videoCard": "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
-        "ram": "256mb",
-        "disk": "2gb",
-        "system": "Windows 98/98SE/ME/2000/XP"
-      },
-      "recSystem": {
-        "processor": "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
-        "videoCard": "NVIDIA GeForce 4 / AMD Radeon 9000 со 128 Мб видеопамяти",
-        "ram": "512mb",
-        "disk": "2gb",
-        "system": "Windows XP"
-      }
+      "minSystem": [
+        "Intel Pentium III с тактовой частотой 933 МГц",
+        "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
+        "256mb",
+        "2gb",
+        "Windows 98/98SE/ME/2000/XP"
+      ],
+      "recSystem": [
+        "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
+        "NVIDIA GeForce 4 / AMD Radeon 9000 со 128 Мб видеопамяти",
+        "512mb",
+        "2gb",
+        "Windows XP"
+      ]
     },
     {
       "id": 19,
@@ -597,20 +597,20 @@
       "service": "Steam",
       "contentType": "Ключ",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel / Dual core CPU 2.4 GHz",
-        "videoCard": "NVIDIA GeForce  GTS 450-class (Intel HD 4000)",
-        "ram": "4gb",
-        "disk": "3gb",
-        "system": "Windows 7"
-      },
-      "recSystem": {
-        "processor": "Intel / Quad core CPU 3.0 GHz",
-        "videoCard": "NVIDIA GeForce GTX 760-class (2 ГБ)",
-        "ram": "5gb",
-        "disk": "3gb",
-        "system": "Windows 7/8.1/10 (64-битные)"
-      }
+      "minSystem": [
+        "Intel / Dual core CPU 2.4 GHz",
+        "NVIDIA GeForce  GTS 450-class (Intel HD 4000)",
+        "4gb",
+        "3gb",
+        "Windows 7"
+      ],
+      "recSystem": [
+        "Intel / Quad core CPU 3.0 GHz",
+        "NVIDIA GeForce GTX 760-class (2 ГБ)",
+        "5gb",
+        "3gb",
+        "Windows 7/8.1/10 (64-битные)"
+      ]
     },
     {
       "id": 20,
@@ -629,20 +629,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel / Dual core CPU 2.4 GHz",
-        "videoCard": "",
-        "ram": "2gb",
-        "disk": "800mb",
-        "system": "Windows XP SP3"
-      },
-      "recSystem": {
-        "processor": "Intel / Quad core CPU 3.0 GHz",
-        "videoCard": "",
-        "ram": "4gb",
-        "disk": "2gb",
-        "system": "Windows 7"
-      }
+      "minSystem": [
+        "Intel / Dual core CPU 2.4 GHz",
+        "",
+        "2gb",
+        "800mb",
+        "Windows XP SP3"
+      ],
+      "recSystem": [
+        "Intel / Quad core CPU 3.0 GHz",
+        "",
+        "4gb",
+        "2gb",
+        "Windows 7"
+      ]
     },
     {
       "id": 21,
@@ -661,20 +661,20 @@
       "service": "Steam",
       "contentType": "Учетная запись",
       "discount": "15%",
-      "minSystem": {
-        "processor": "Intel Pentium III / AMD Athlon с тактовой частотой 1 ГГц",
-        "videoCard": "NVIDIA GeForce 3 с 64 МБ видеопамяти",
-        "ram": "256m",
-        "disk": "5gb",
-        "system": "Windows 2000 / XP"
-      },
-      "recSystem": {
-        "processor": "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
-        "videoCard": "NVIDIA GeForce 6 со 128 МБ видеопамяти",
-        "ram": "512mb",
-        "disk": "5gb",
-        "system": "Windows XP"
-      }
+      "minSystem": [
+        "Intel Pentium III / AMD Athlon с тактовой частотой 1 ГГц",
+        "NVIDIA GeForce 3 с 64 МБ видеопамяти",
+        "256m",
+        "5gb",
+        "Windows 2000 / XP"
+      ],
+      "recSystem": [
+        "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
+        "NVIDIA GeForce 6 со 128 МБ видеопамяти",
+        "512mb",
+        "5gb",
+        "Windows XP"
+      ]
     }
   ],
   "users": [

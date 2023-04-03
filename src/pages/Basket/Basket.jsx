@@ -11,7 +11,7 @@ const Basket = () => {
 
     const navigate = useNavigate()
 
-    const {basket, plusBasket, minusBasket, delBasket, user} = useContext(CustomContext)
+    const {basket, plusBasket, minusBasket, delBasket, user, favorite, addFavorite} = useContext(CustomContext)
 
     const {t} = useTranslation()
 
@@ -43,10 +43,11 @@ const Basket = () => {
                         <div className="basket__content">
                             {
                                 basket.length ? <ul className="basket__list">
-                                    {basket.map((item) => (
+                                    {
+                                        basket.map((item) => (
                                         <li key={item.id} className="basket__product">
                                             <div className="basket__product-box">
-                                                <img  onClick={() => navigate(`/product/${item.id}`)} src={item.image} alt={item.title} className="basket__product-img"/>
+                                                <img onClick={() => navigate(`/product/${item.id}`)} src={item.image} alt={item.title} className="basket__product-img"/>
                                             </div>
                                             <div className="basket__product-box">
                                                 <h3 onClick={() => navigate(`/product/${item.id}`)} className="basket__product-title">{item.title}</h3>
@@ -74,17 +75,16 @@ const Basket = () => {
                                                     <p onClick={() => minusBasket(item.id)} className="basket__product-add">-</p>
                                                     <span className="basket__product-count">
                                                 {basket.find(product => product.id === item.id).count}
-                                            </span>
+                                                 </span>
                                                     <p onClick={() => plusBasket(item.id)} className="basket__product-add">+</p>
                                                 </div>
-                                                <span onClick={() => setFav(prev => !prev)} className="basket__product-icon">
-                                                    {
-                                                        fav ? <AiOutlineHeart fill="red"/> : <AiOutlineHeart/>
-                                                    }
+                                                <span onClick={() => addFavorite(item.id)} className="basket__product-icon">
+                                                    <AiOutlineHeart fill="red"/>
                                                 </span>
                                             </div>
                                         </li>
-                                    ))}
+                                    ))
+                                    }
                                 </ul> : <div className="basket__content-empty"><p className="basket__content-empty-text">Корзина пуста</p></div>
                             }
                             <ul className="basket__payments">
@@ -157,11 +157,11 @@ const Basket = () => {
                                     ))
                                 }
                             </p>
-                            <button className="basket__aside-btn">{t('basket.asideBtn')}</button>
+                            <button onClick={() => navigate('/checkout')} type="button" className="basket__aside-btn">{t('basket.asideBtn')}</button>
                             <div className="basket__aside-label">
                                 {t('basket.asideCheck')} <a href="https://www.youtube.com/watch?v=1GpkiX13OHw&t=1376s" className="basket__aside-link">
-                                      {t('basket.asideLink')}
-                                </a>
+                                {t('basket.asideLink')}
+                            </a>
                             </div>
                         </div>
                         <div className="basket__aside-block">

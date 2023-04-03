@@ -4,12 +4,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  list-style-type: none;
   text-decoration: none;
   outline: none;
   font-style: normal;
   transition: .3s all;
   font-family: 'Manrope', sans-serif;
+  list-style-type: none;
 }
 
 button, input{
@@ -51,4 +51,6 @@ $black: #06030F;
 @import "register";
 @import "form";
 @import "switchLang";
+@import "order";
+@import "checkout";
 @import "footer";

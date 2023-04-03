@@ -103,6 +103,9 @@
     }
     &-text{
       @include text(400, 0, 17px, white);
+      &-link{
+        @include text(400, 0, 17px, #77BE1D);
+      }
     }
   }
   &__gallery{
@@ -151,7 +154,35 @@
       justify-content: center;
     }
   }
+  &__tab{
+    &-content{
+      display: flex;
+      column-gap: 50px;
+    }
+    &-title{
+      @include text(600, 0, 20px, white)
+    }
+    &-text{
+      @include text(400, 0, 20px, #868686);
+    }
+    &-ans{
+      @include text(600, 0, 20px, white)
+    }
+    &-list{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    &-block{
+      display: flex;
+      column-gap: 15px;
+      &:first-of-type{
+        margin-bottom: 25px;
+      }
+    }
+  }
 }
+
 #gallery{
   display: flex;
   column-gap: 12px;

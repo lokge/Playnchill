@@ -1,0 +1,61 @@
+.checkout{
+  height: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+  background-color: $black;
+  &__row{
+    display: flex;
+  }
+  &__form{
+    &-title{
+      margin: 15px;
+    }
+    &-block{
+      width: 850px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #FFFFFF1A;
+      &:last-of-type{
+        margin-top: 20px;
+      }
+    }
+    &-input{
+      width: 100%;
+      color: white;
+      border-radius: 10px;
+      padding: 14px 20px 16px;
+      background-color: $black;
+      border: 2px solid #FFFFFF1A;
+      margin-bottom: 20px;
+    }
+    &-title{
+      @include text(600, 0, 24px, white)
+    }
+    &-box{
+      padding: 10px 10px 10px 50px;
+      &-title{
+        margin: 15px 0;
+      }
+    }
+    &-notif{
+      @include text(500, 0, 14px, #747474);
+    }
+    &-link{
+      margin-top: 15px;
+      @include text(500, 0, 17px, #747474);
+    }
+  }
+  &__input-box{
+    display: flex;
+    gap: 20px;
+  }
+  &__labels{
+    &-label{
+      margin-right: 5px;
+      @include text(500, 0, 14px, white);
+    }
+    &-radio{
+      margin: 5px ;
+    }
+  }
+}

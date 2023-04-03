@@ -6,12 +6,13 @@ import {CustomContext} from "../../utils/Context";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import ProductImageCards from "./ProductImageCards/ProductImageCards";
 import Card from "../Card/Card";
+import ProductTabs from "./ProductTabs/ProductTabs";
 
 
 const Product = () => {
 
     const [games, setGames] = useState([])
-    const [active, setActive] = useState(false)
+    const [status, setStatus] = useState('description')
 
     useEffect(() => {
         axios(`/products?`)
@@ -20,15 +21,17 @@ const Product = () => {
     },[])
 
     const [product, setProduct] = useState([])
-    const {id, category} = useParams()
+    const {id} = useParams()
 
-    const {addBasket} = useContext(CustomContext)
+
+
+    const {basket, addBasket, addFavorite} = useContext(CustomContext)
 
     useEffect(() => {
         axios(`http://localhost:6969/products/${id}`)
             .then(({data}) => setProduct(data))
             .catch((err) => console.log('Ошибка при получении продукта'))
-    }, [])
+    }, [product])
 
     if (JSON.stringify(product) === '{}'){
         return (
@@ -60,8 +63,8 @@ const Product = () => {
                             </div>
                             <div className="product__btns">
                                 <button className="product__btn">Купить</button>
-                                <button type='button' onClick={() => addBasket(product)} className="product__btn">В корзину</button>
-                                <button className="product__btn"><AiOutlineHeart className="product__btn-icon"/></button>
+                                <button type="button" onClick={() => addBasket(product)} className="product__btn">В корзину</button>
+                                <button type="button" onClick={() => addFavorite(product)} className="product__btn"><AiOutlineHeart className="product__btn-icon"/></button>
                             </div>
                             <div className="product__description">
                                 <span className="product__description-text">
@@ -90,13 +93,12 @@ const Product = () => {
             <div className="product__descriptions">
                 <div className="container">
                     <div className="product__header">
-                        <button onClick={() => setActive(prev => !prev)} type="button" className={active ? "product__header-sect-active" : "product__header-sect"}>Описание товара</button>
-                        <button onClick={() => setActive(prev => !prev)} type="button" className={active ? "product__header-sect-active" : "product__header-sect"}>Системные требования</button>
-                        <button onClick={() => setActive(prev => !prev)} type="button" className={active ? "product__header-sect-active" : "product__header-sect"}>Активация</button>
+                        <button onClick={() => setStatus('description')} type="button" className={status === 'description' ? "product__header-sect-active" : "product__header-sect"}>Описание товара</button>
+                        <button onClick={() => setStatus('system')} type="button" className={status === 'system' ? "product__header-sect-active" : "product__header-sect"}>Системные требования</button>
+                        <button onClick={() => setStatus('activate')} type="button" className={status === 'activate' ? "product__header-sect-active" : "product__header-sect"}>Активация</button>
                     </div>
                     <div className="product__about">
-                        <h5 className="product__about-title">О чем {product.title}?</h5>
-                        <p className="product__about-text">{product.description}</p>
+                        <ProductTabs status={status} product={product}/>
                     </div>
                 </div>
             </div>

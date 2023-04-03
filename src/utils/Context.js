@@ -10,15 +10,32 @@ export const Context = (props) => {
         email: ''
     })
 
-    const [basket, setBasket] = useState([])
+    //Избранные
+    const [favorite, setFavorite] = useState([])
+    const addFavorite = (product) => {
+        setFavorite(prev => [...prev, {
+            ...product,
+            count: 1,
+        }])
+        localStorage.setItem('favorite', JSON.stringify(favorite))
+    }
+    const delFavorite = (id) => {
+        setFavorite(prev => prev.filter(item => item.id !== id))
+    }
 
+
+    //Работа с корзиной
+    const [basket, setBasket] = useState([])
     const addBasket = (product) => {
         setBasket(prev => [...prev, {
             ...product,
             count: 1,
         }])
-        localStorage.setItem('basket', JSON.stringify(basket))
     }
+    const delBasket = (id) => {
+        setBasket(prev => prev.filter(item => item.id !== id))
+    }
+
 
     //Изменение кол-ва товара в корзине
     const plusBasket = (id) => {
@@ -46,9 +63,6 @@ export const Context = (props) => {
             )
         }
     }
-    const delBasket = (id) => {
-        setBasket(prev => prev.filter(item => item.id !== id))
-    }
 
     //Работа с юзером
     useEffect(() => {
@@ -60,6 +74,10 @@ export const Context = (props) => {
             setBasket(JSON.parse(localStorage.getItem('basket')))
         }
 
+        if (localStorage.getItem('favorite') !== null) {
+            setFavorite(JSON.parse(localStorage.getItem('favorite')))
+        }
+
     }, [])
 
     //LocalStorage basket
@@ -67,13 +85,13 @@ export const Context = (props) => {
         localStorage.setItem('basket', JSON.stringify(basket))
     }, [basket])
 
-    //Корзина
+    //LocalStorage favorite
     useEffect(() => {
-        localStorage.setItem('basket', JSON.stringify(basket))
-    }, [basket])
+        localStorage.setItem('favorite', JSON.stringify(favorite))
+    }, [favorite])
 
 
-
+    //Получение продуктов
     const [products, setProducts] = useState([])
 
     const getAllProducts = () => {
@@ -92,7 +110,10 @@ export const Context = (props) => {
         addBasket,
         plusBasket,
         minusBasket,
-        delBasket
+        delBasket,
+        favorite,
+        addFavorite,
+        delFavorite
     }
 
     return <CustomContext.Provider value={value}>
