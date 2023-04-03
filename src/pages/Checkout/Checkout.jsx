@@ -11,19 +11,37 @@ import {CustomContext} from "../../utils/Context";
 import {useNavigate} from "react-router-dom";
 import {CgClose} from "react-icons/cg";
 import {useForm} from "react-hook-form";
-
+import axios from "../../utils/axios";
 
 const Checkout = () => {
 
     const navigate = useNavigate()
 
     //Получение данных с корзины
-    const {basket, delBasket} = useContext(CustomContext)
+    const {basket, delBasket, user} = useContext(CustomContext)
 
     const {reset, register, handleSubmit} = useForm()
 
-    const addOrder = (data) => {
-        console.log(data)
+    const addOrder = async (data) => {
+        await axios.post('http://localhost:6969/buys', {
+            ...data,
+            games: basket,
+            price: basket.reduce((acc, rec) => acc + rec.count * rec.price, 0),
+            user: user
+        }).then(() => console.log('Успешно добавлен'))
+
+        await axios.patch(`http://localhost:6969/users/${user.id}`, {
+            games : [
+                ...user.games,
+                {
+                    games: basket,
+                    price: basket.reduce((acc, rec) => acc + rec.count * rec.price, 0)
+                }
+            ]}
+        ).then(() => console.log('Успешно добавлен'))
+
+        await navigate('/order')
+        await reset()
     }
 
     return (
