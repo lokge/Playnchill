@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useContext} from 'react';
 import axios from "../../utils/axios";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import {AiOutlineHeart} from "react-icons/ai"
 import {CustomContext} from "../../utils/Context";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
@@ -11,6 +11,7 @@ import ProductTabs from "./ProductTabs/ProductTabs";
 
 const Product = () => {
 
+    const navigate = useNavigate()
     const [games, setGames] = useState([])
     const [status, setStatus] = useState('description')
 
@@ -57,12 +58,12 @@ const Product = () => {
                                 </div>}
                             </span>
                             <div className="product__prices">
-                                <p className="product__price">{product.price}</p>
-                                <p className="product__discount">{product.discount}</p>
-                                <p className="product__original">{product.price}</p>
+                                <p className="product__price">{product.discount > 0 ? <span>{Math.trunc(product.price - product.price / 100 * product.discount)}</span> : product.price}</p>
+                                <p className="product__discount">{product.discount > 0 ? <span className="item__discount-count">-{product.discount}$</span> : ''}</p>
+                                <p className="product__original">{product.discount > 0 ? product.price : ''}</p>
                             </div>
                             <div className="product__btns">
-                                <button className="product__btn">Купить</button>
+                                <button type="button" onClick={() => navigate('/checkout')} className="product__btn">Купить</button>
                                 <button type="button" onClick={() => addBasket(product)} className="product__btn">В корзину</button>
                                 <button type="button" onClick={() => addFavorite(product)} className="product__btn"><AiOutlineHeart className="product__btn-icon"/></button>
                             </div>

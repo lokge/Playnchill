@@ -16,7 +16,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel® Core™ 2 Q6600 | AMD Phenom 9850",
         "NVIDIA® 9800 GT / AMD HD 4870",
@@ -48,7 +48,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel Core i3-3210",
         "Intel HD Graphics 4000",
@@ -112,7 +112,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "P-3 с тактовой частотой 450 МГц",
         "с 16 МБ видеопамяти, поддержка Direct3D",
@@ -144,7 +144,7 @@
       "region": "Россия и страны СНГ",
       "service": "Epic Games",
       "contentType": "Ключ",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel Pentium 4 с тактовой частотой 1,4 ГГц",
         "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Мб видеопамяти",
@@ -176,7 +176,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Ключ",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
         "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
@@ -208,7 +208,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Ключ",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
         "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
@@ -226,7 +226,7 @@
     },
     {
       "id": 8,
-      "image": "https://img1.od-cdn.com/ImageType-400/7964-1/FE1/669/0D/%7BFE16690D-11E8-40CE-8C3E-B99C49C7B6FC%7DImg400.jpg",
+      "image": "https://img1.od-cdn.com/ImageType-400/7964-1/FE1/669/0D/7BFE16690D-11E8-40CE-8C3E-B99C49C7B6FC7DImg400.jpg",
       "bigImage": "",
       "bannerImage": "",
       "logoImage": "",
@@ -240,7 +240,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Ключ",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel i3-4170 3,7 ГГц / Intel i5-750 2,67 ГГц",
         "NVidia 650TI / NVidia GT 740 / AMD R7 250x",
@@ -272,7 +272,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel Core 2 Duo E6750 2,66 ГГц / AMD Athlon 64 X2 6000+",
         "GeForce GT 740 2 ГБ / Radeon HD 5770 1 ГБ",
@@ -304,7 +304,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel Core i3-4330",
         "Intel HD Graphics 4600",
@@ -340,7 +340,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "С тактовой частотой 1,7 ГГц",
         "С поддержкой DirectX 8.1 и SSE",
@@ -372,7 +372,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Ключ",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "AMD Athlon64 X2 с тактовой частотой 2.1 ГГц / Intel Core 2 Duo с тактовой частотой 1.86 ГГц",
         "AMD Radeon HD 2600 XT / NVIDIA GeForce 8600 с 512 Мб видеопамяти",
@@ -404,7 +404,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
         "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
@@ -436,7 +436,7 @@
       "region": "Россия и страны СНГ",
       "service": "Epic Games",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "с тактовой частотой 2.0 ГГц",
         "с 128 МБ видеопамяти и поддержкой Shader Model 2.0",
@@ -454,7 +454,7 @@
     },
     {
       "id": 15,
-      "image": "https://img1.od-cdn.com/ImageType-400/0111-1/D6A/4A1/6D/%7BD6A4A16D-CE77-4316-8885-C7FC78A4A4ED%7DImg400.jpg",
+      "image": "https://img1.od-cdn.com/ImageType-400/0111-1/D6A/4A1/6D/7BD6A4A16D-CE77-4316-8885-C7FC78A4A4ED7DImg400.jpg",
       "bigImage": "https://imgur.com/9YboiGD.jpg",
       "bannerImage": "https://i.postimg.cc/kg4PkcxS/2023-03-28-043214985.png",
       "logoImage": "https://pngimg.com/uploads/battlefield/battlefield_PNG72.png",
@@ -468,7 +468,7 @@
       "region": "Россия и страны СНГ",
       "service": "Epic Games",
       "contentType": "Учетная запись",
-      "discount": "8%",
+      "discount": "8",
       "minSystem": [
         "Intel Core i5 6600K / AMD FX-6350",
         "nVidia GeForce GTX 660 2 ГБ / AMD Radeon HD 7850 2 ГБ",
@@ -500,7 +500,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "8%",
+      "discount": "8",
       "minSystem": [
         "Intel Core i5 6600K / AMD FX-6350",
         "nVidia GeForce GTX 660 2 ГБ / AMD Radeon HD 7850 2 ГБ",
@@ -532,7 +532,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel Core i3-4340 / AMD FX-6300",
         "NVIDIA GeForce GTX 960 2 ГБ / AMD Radeon R7 370 2 ГБ",
@@ -564,7 +564,7 @@
       "region": "Россия и страны СНГ",
       "service": "Epic Games",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel Pentium III с тактовой частотой 933 МГц",
         "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
@@ -596,7 +596,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Ключ",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel / Dual core CPU 2.4 GHz",
         "NVIDIA GeForce  GTS 450-class (Intel HD 4000)",
@@ -628,7 +628,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel / Dual core CPU 2.4 GHz",
         "",
@@ -660,7 +660,7 @@
       "region": "Россия и страны СНГ",
       "service": "Steam",
       "contentType": "Учетная запись",
-      "discount": "15%",
+      "discount": "15",
       "minSystem": [
         "Intel Pentium III / AMD Athlon с тактовой частотой 1 ГГц",
         "NVIDIA GeForce 3 с 64 МБ видеопамяти",
@@ -686,75 +686,48 @@
       "games": {
         "games": [
           {
-            "id": 13,
-            "image": "https://i.playground.ru/e/IjOWXjBCKky5tXE-gSVe7g.jpeg?200x277",
-            "bigImage": "",
-            "bannerImage": "",
-            "logoImage": "",
-            "update": "true",
-            "title": "Dota 2",
-            "category": "strategy",
-            "availability": "true",
-            "price": "800",
-            "description": "Мультиплеерная RTS/RPG, фундаментом для которой стал мод Defense of the Ancients для WarCraft 3.\n\nГеймплей совсем не изменился. Dota 2 играется и чувствуется, как ваша любимая Defense of the Ancients – при ней больше 100 героев, куча режимов игры, битвы «пять на пять» с блужданием по карте, сбором предметов, дежурной прокачкой и прочими ролевыми элементами. На одиночную кампанию не рассчитывайте – только онлайновые битвы.В качестве онлайновой платформы используется паровая технология Steam. Но достижениями и поиском матчей/игроков по уровню их мастерства дело не ограничивается. Valve Software усовершенствовала Steamworks специально для Dota 2. Касается это в первую очередь всяких социальных вещей и активности в комьюнити. За дельные советы, данные на форуме, или написанный гид по управлению тем или иным персонажем вы будете получать награды, которые будут видны простому народу.",
-            "smallDesc": "",
-            "region": "Россия и страны СНГ",
-            "service": "Steam",
-            "contentType": "Учетная запись",
-            "discount": "15%",
-            "minSystem": [
-              "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
-              "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
-              "4gb",
-              "60gb",
-              "Windows 7 или новее"
-            ],
-            "recSystem": [
-              "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
-              "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
-              "4gb",
-              "60gb",
-              "Windows 7 или новее"
-            ],
-            "count": 2
-          },
-          {
-            "id": 18,
-            "image": "https://i.playground.ru/e/RhkBTF7F2UwkE-EvTBU6cA.jpeg?200x277",
+            "id": 3,
+            "image": "https://2.bp.blogspot.com/-xJZYFeDbvQQ/UfqhM7IfDXI/AAAAAAAAAZM/4Q7MiIB0jek/s400/gta-vice-city.jpg",
             "bigImage": "",
             "bannerImage": "",
             "logoImage": "",
             "update": "false",
-            "title": "Need for Speed: Underground 2",
-            "category": "race",
+            "title": "Grand Theft Auto: Vice City",
+            "category": "action",
             "availability": "true",
-            "price": "699",
-            "description": "Вторая игра из безусловно удачной серии Need For Speed: Underground, посвещенная уличным гонкам. Ощущение реальной скорости, увеличенные возможности по тюнингу машин, переработанная графическая основа и более 30-ти прекрасных машин - вот то, ради чего её стоит ждать.",
+            "price": "800",
+            "description": "Grand Theft Auto: Vice City - это прямое продолжение Grand Theft Auto III, события которого разворачиваются в 1986 году в городе Вайс-Сити. Томми Верчетти, протагонист третьей части, выходит из тюрьмы спустя пятнадцать лет. Он отправляется в Вайс-Сити по заданию своего босса Сонни Форелли проконтролировать сделку по продаже наркотиков, которая происходит в корабельных доках Вайс-Сити. Сделка срывается, и Сонни приказывает Томми вернуть деньги и товар, с чего начинаются приключения Томми Верчетти в Вайс-Сити. \n\nVice City - это приключенческий экшен, который сочетает в себе шутер от третьего лица, и элементы автосимулятора в большом и открытом для исследования игровом мире. Игра наследует и улучшает геймплейные элементы Grand Theft Auto III. Игроку предстоит выполнять, преимущественно криминальные и противозаконные задания, выдаваемые различными персонажами игры - криминальными боссами и другими малоприятными личностями. При этом игрок может выполнять не только обязательные, но и побочные задания, которые открываются в определенной точке на карте.  Томми может путешествовать по карте как пешком, так и на транспорте, однако он совершенно не умеет плавать.",
             "smallDesc": "",
-            "region": "Россия и страны СНГ",
-            "service": "Epic Games",
+            "region": "Страны СНГ",
+            "service": "Steam",
             "contentType": "Учетная запись",
-            "discount": "15%",
+            "discount": "0",
             "minSystem": [
-              "Intel Pentium III с тактовой частотой 933 МГц",
-              "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
-              "256mb",
+              "800 МГц Intel Pentium III | 800 МГц AMD Athlon",
+              "32 МБ видеокарта с совместимыми с DirectX 9.0 драйверами («GeForce» или лучше)",
               "2gb",
-              "Windows 98/98SE/ME/2000/XP"
+              "1gb",
+              "Windows 2000/XP"
             ],
             "recSystem": [
-              "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
-              "NVIDIA GeForce 4 / AMD Radeon 9000 со 128 Мб видеопамяти",
-              "512mb",
+              "Intel Pentium G2020 @ 2.90GHz",
+              "GeForce GT 630",
+              "4gb",
               "2gb",
-              "Windows XP"
+              "Windows 98/XP"
             ],
             "count": 1
           }
         ],
-        "price": 2299,
-        "date": "2023-04-03T08:54:38.439Z"
+        "price": 800,
+        "date": "2023-04-03T14:24:37.954Z"
       }
+    },
+    {
+      "email": "testmail@gmail.com",
+      "password": "$2a$10$gOq2XYrWNuY/F6UXVc6HZ.kso2b6ZLrmyV9rYDv9yrhgnKNEqp5ry",
+      "login": "Test Name",
+      "id": 2
     }
   ],
   "buys": [
@@ -778,7 +751,7 @@
           "region": "Россия и страны СНГ",
           "service": "Steam",
           "contentType": "Учетная запись",
-          "discount": "15%",
+          "discount": "15",
           "minSystem": [
             "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
             "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
@@ -811,7 +784,7 @@
           "region": "Россия и страны СНГ",
           "service": "Epic Games",
           "contentType": "Учетная запись",
-          "discount": "15%",
+          "discount": "15",
           "minSystem": [
             "Intel Pentium III с тактовой частотой 933 МГц",
             "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
@@ -859,7 +832,7 @@
           "region": "Россия и страны СНГ",
           "service": "Steam",
           "contentType": "Учетная запись",
-          "discount": "15%",
+          "discount": "15",
           "minSystem": [
             "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
             "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
@@ -892,7 +865,7 @@
           "region": "Россия и страны СНГ",
           "service": "Epic Games",
           "contentType": "Учетная запись",
-          "discount": "15%",
+          "discount": "15",
           "minSystem": [
             "Intel Pentium III с тактовой частотой 933 МГц",
             "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
@@ -919,6 +892,207 @@
       },
       "date": "2023-04-03T08:54:38.405Z",
       "id": 2
+    },
+    {
+      "number": "",
+      "password": "",
+      "games": [
+        {
+          "id": 13,
+          "image": "https://i.playground.ru/e/IjOWXjBCKky5tXE-gSVe7g.jpeg?200x277",
+          "bigImage": "",
+          "bannerImage": "",
+          "logoImage": "",
+          "update": "true",
+          "title": "Dota 2",
+          "category": "strategy",
+          "availability": "true",
+          "price": "800",
+          "description": "Мультиплеерная RTS/RPG, фундаментом для которой стал мод Defense of the Ancients для WarCraft 3.\n\nГеймплей совсем не изменился. Dota 2 играется и чувствуется, как ваша любимая Defense of the Ancients – при ней больше 100 героев, куча режимов игры, битвы «пять на пять» с блужданием по карте, сбором предметов, дежурной прокачкой и прочими ролевыми элементами. На одиночную кампанию не рассчитывайте – только онлайновые битвы.В качестве онлайновой платформы используется паровая технология Steam. Но достижениями и поиском матчей/игроков по уровню их мастерства дело не ограничивается. Valve Software усовершенствовала Steamworks специально для Dota 2. Касается это в первую очередь всяких социальных вещей и активности в комьюнити. За дельные советы, данные на форуме, или написанный гид по управлению тем или иным персонажем вы будете получать награды, которые будут видны простому народу.",
+          "smallDesc": "",
+          "region": "Россия и страны СНГ",
+          "service": "Steam",
+          "contentType": "Учетная запись",
+          "discount": "15",
+          "minSystem": [
+            "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
+            "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
+            "4gb",
+            "60gb",
+            "Windows 7 или новее"
+          ],
+          "recSystem": [
+            "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
+            "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
+            "4gb",
+            "60gb",
+            "Windows 7 или новее"
+          ],
+          "count": 2
+        },
+        {
+          "id": 18,
+          "image": "https://i.playground.ru/e/RhkBTF7F2UwkE-EvTBU6cA.jpeg?200x277",
+          "bigImage": "",
+          "bannerImage": "",
+          "logoImage": "",
+          "update": "false",
+          "title": "Need for Speed: Underground 2",
+          "category": "race",
+          "availability": "true",
+          "price": "699",
+          "description": "Вторая игра из безусловно удачной серии Need For Speed: Underground, посвещенная уличным гонкам. Ощущение реальной скорости, увеличенные возможности по тюнингу машин, переработанная графическая основа и более 30-ти прекрасных машин - вот то, ради чего её стоит ждать.",
+          "smallDesc": "",
+          "region": "Россия и страны СНГ",
+          "service": "Epic Games",
+          "contentType": "Учетная запись",
+          "discount": "15",
+          "minSystem": [
+            "Intel Pentium III с тактовой частотой 933 МГц",
+            "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
+            "256mb",
+            "2gb",
+            "Windows 98/98SE/ME/2000/XP"
+          ],
+          "recSystem": [
+            "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
+            "NVIDIA GeForce 4 / AMD Radeon 9000 со 128 Мб видеопамяти",
+            "512mb",
+            "2gb",
+            "Windows XP"
+          ],
+          "count": 1
+        }
+      ],
+      "price": 2299,
+      "user": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxva2dlQGdtYWlsLmNvbSIsImlhdCI6MTY4MDUxMjAxNCwiZXhwIjoxNjgwNTE1NjE0LCJzdWIiOiIxIn0.Bz6sY39PevV1DsYZJSPg8-ZaUcVGS0cSltpHAwUu_ZE",
+        "email": "lokge@gmail.com",
+        "login": "lokge",
+        "id": 1
+      },
+      "date": "2023-04-03T12:22:21.052Z",
+      "id": 3
+    },
+    {
+      "number": "12312",
+      "password": "1231",
+      "games": [
+        {
+          "id": 3,
+          "image": "https://2.bp.blogspot.com/-xJZYFeDbvQQ/UfqhM7IfDXI/AAAAAAAAAZM/4Q7MiIB0jek/s400/gta-vice-city.jpg",
+          "bigImage": "",
+          "bannerImage": "",
+          "logoImage": "",
+          "update": "false",
+          "title": "Grand Theft Auto: Vice City",
+          "category": "action",
+          "availability": "true",
+          "price": "800",
+          "description": "Grand Theft Auto: Vice City - это прямое продолжение Grand Theft Auto III, события которого разворачиваются в 1986 году в городе Вайс-Сити. Томми Верчетти, протагонист третьей части, выходит из тюрьмы спустя пятнадцать лет. Он отправляется в Вайс-Сити по заданию своего босса Сонни Форелли проконтролировать сделку по продаже наркотиков, которая происходит в корабельных доках Вайс-Сити. Сделка срывается, и Сонни приказывает Томми вернуть деньги и товар, с чего начинаются приключения Томми Верчетти в Вайс-Сити. \n\nVice City - это приключенческий экшен, который сочетает в себе шутер от третьего лица, и элементы автосимулятора в большом и открытом для исследования игровом мире. Игра наследует и улучшает геймплейные элементы Grand Theft Auto III. Игроку предстоит выполнять, преимущественно криминальные и противозаконные задания, выдаваемые различными персонажами игры - криминальными боссами и другими малоприятными личностями. При этом игрок может выполнять не только обязательные, но и побочные задания, которые открываются в определенной точке на карте.  Томми может путешествовать по карте как пешком, так и на транспорте, однако он совершенно не умеет плавать.",
+          "smallDesc": "",
+          "region": "Страны СНГ",
+          "service": "Steam",
+          "contentType": "Учетная запись",
+          "discount": "0",
+          "minSystem": [
+            "800 МГц Intel Pentium III | 800 МГц AMD Athlon",
+            "32 МБ видеокарта с совместимыми с DirectX 9.0 драйверами («GeForce» или лучше)",
+            "2gb",
+            "1gb",
+            "Windows 2000/XP"
+          ],
+          "recSystem": [
+            "Intel Pentium G2020 @ 2.90GHz",
+            "GeForce GT 630",
+            "4gb",
+            "2gb",
+            "Windows 98/XP"
+          ],
+          "count": 1
+        }
+      ],
+      "price": 800,
+      "user": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxva2dlQGdtYWlsLmNvbSIsImlhdCI6MTY4MDUzMDAzNSwiZXhwIjoxNjgwNTMzNjM1LCJzdWIiOiIxIn0.FrRd_1VsBD7tMic-bLd2MN-EcqNjY1EKfOVCJWS1lE0",
+        "email": "lokge@gmail.com",
+        "login": "lokge",
+        "id": 1,
+        "games": {
+          "games": [
+            {
+              "id": 13,
+              "image": "https://i.playground.ru/e/IjOWXjBCKky5tXE-gSVe7g.jpeg?200x277",
+              "bigImage": "",
+              "bannerImage": "",
+              "logoImage": "",
+              "update": "true",
+              "title": "Dota 2",
+              "category": "strategy",
+              "availability": "true",
+              "price": "800",
+              "description": "Мультиплеерная RTS/RPG, фундаментом для которой стал мод Defense of the Ancients для WarCraft 3.\n\nГеймплей совсем не изменился. Dota 2 играется и чувствуется, как ваша любимая Defense of the Ancients – при ней больше 100 героев, куча режимов игры, битвы «пять на пять» с блужданием по карте, сбором предметов, дежурной прокачкой и прочими ролевыми элементами. На одиночную кампанию не рассчитывайте – только онлайновые битвы.В качестве онлайновой платформы используется паровая технология Steam. Но достижениями и поиском матчей/игроков по уровню их мастерства дело не ограничивается. Valve Software усовершенствовала Steamworks специально для Dota 2. Касается это в первую очередь всяких социальных вещей и активности в комьюнити. За дельные советы, данные на форуме, или написанный гид по управлению тем или иным персонажем вы будете получать награды, которые будут видны простому народу.",
+              "smallDesc": "",
+              "region": "Россия и страны СНГ",
+              "service": "Steam",
+              "contentType": "Учетная запись",
+              "discount": "15",
+              "minSystem": [
+                "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
+                "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
+                "4gb",
+                "60gb",
+                "Windows 7 или новее"
+              ],
+              "recSystem": [
+                "Intel Pentium Dual-core / AMD 2.8 ГГц или лучше",
+                "nVidia GeForce 8600 / 9600GT, ATI / AMD Radeon HD2600 / 3600 или лучше",
+                "4gb",
+                "60gb",
+                "Windows 7 или новее"
+              ],
+              "count": 2
+            },
+            {
+              "id": 18,
+              "image": "https://i.playground.ru/e/RhkBTF7F2UwkE-EvTBU6cA.jpeg?200x277",
+              "bigImage": "",
+              "bannerImage": "",
+              "logoImage": "",
+              "update": "false",
+              "title": "Need for Speed: Underground 2",
+              "category": "race",
+              "availability": "true",
+              "price": "699",
+              "description": "Вторая игра из безусловно удачной серии Need For Speed: Underground, посвещенная уличным гонкам. Ощущение реальной скорости, увеличенные возможности по тюнингу машин, переработанная графическая основа и более 30-ти прекрасных машин - вот то, ради чего её стоит ждать.",
+              "smallDesc": "",
+              "region": "Россия и страны СНГ",
+              "service": "Epic Games",
+              "contentType": "Учетная запись",
+              "discount": "15",
+              "minSystem": [
+                "Intel Pentium III с тактовой частотой 933 МГц",
+                "NVIDIA GeForce 2 / AMD Radeon 7500 с 32 Mb видеопамяти",
+                "256mb",
+                "2gb",
+                "Windows 98/98SE/ME/2000/XP"
+              ],
+              "recSystem": [
+                "Intel Pentium IV / AMD Athlon XP с тактовой частотой 1.5 ГГц",
+                "NVIDIA GeForce 4 / AMD Radeon 9000 со 128 Мб видеопамяти",
+                "512mb",
+                "2gb",
+                "Windows XP"
+              ],
+              "count": 1
+            }
+          ],
+          "price": 2299,
+          "date": "2023-04-03T12:22:21.506Z"
+        }
+      },
+      "date": "2023-04-03T14:24:37.601Z",
+      "id": 4
     }
   ]
 }

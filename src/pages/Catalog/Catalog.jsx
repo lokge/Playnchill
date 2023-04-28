@@ -36,7 +36,6 @@ const Catalog = () => {
 
         let categories = `${category !== 'all' ? 'category=' + category + '&' : ''}`
 
-
         const selectOrder = () => {
             switch (order) {
                 case 'asc' : {
@@ -62,7 +61,7 @@ const Catalog = () => {
             .catch((err) => console.log('Данные не получены'))
     },[category, order, title])
 
-    const {products, getAllProducts} = useContext(CustomContext)
+    const {getAllProducts} = useContext(CustomContext)
 
     useEffect(() => {
         getAllProducts()

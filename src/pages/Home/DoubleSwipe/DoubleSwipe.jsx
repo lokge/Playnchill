@@ -46,9 +46,9 @@ const DoubleSwipe = () => {
                                         <div className="home__doubleSwipe-text">
                                             <h4 className="home__doubleSwipe-title">Играй уже сейчас в {item.title}</h4>
                                             <div className="home__doubleSwipe-prices">
-                                                <p className="home__doubleSwipe-price">{item.price}</p>
-                                                <p className="home__doubleSwipe-discount">{item.discount}</p>
-                                                <p className="home__doubleSwipe-original">{item.price}</p>
+                                                <p className="home__doubleSwipe-price">{item.discount > 0 ? <span>{Math.trunc(item.price - item.price / 100 * item.discount)}</span> : item.price}</p>
+                                                <p className="home__doubleSwipe-discount">{item.discount > 0 ? <span className="item__discount-count">-{item.discount}$</span> : ''}</p>
+                                                <p className="home__doubleSwipe-original">{item.discount > 0 ? item.price : ''}</p>
                                             </div>
                                             <div className="home__doubleSwipe-btns">
                                                 <button type='button' onClick={() => addBasket(item)} className="home__doubleSwipe-btn">Купить</button>

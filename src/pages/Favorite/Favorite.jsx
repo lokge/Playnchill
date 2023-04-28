@@ -25,9 +25,9 @@ const Favorite = () => {
                                                 <div className="favorite__product-descriptions">
                                                     <h3 onClick={() => navigate(`/product/${item.id}`)} className="basket__product-title">{item.title}</h3>
                                                     <div className="basket__product-prices">
-                                                        <p className="basket__product-price">{item.price}</p>
-                                                        <p className="basket__product-disc">{item.discount}</p>
-                                                        <p className="basket__product-original">{item.price}</p>
+                                                        <p className="basket__product-price">{item.discount > 0 ? <span>{Math.trunc(item.price - item.price / 100 * item.discount)}</span> : item.price}</p>
+                                                        <p className="basket__product-disc">{item.discount > 0 ? <span className="item__discount-count">-{item.discount}$</span> : ''}</p>
+                                                        <p className="basket__product-original">{item.discount > 0 ? item.price : ''}</p>
                                                     </div>
                                                     <div className="basket__product-desc">
                                                         <p className="basket__product-activate">
