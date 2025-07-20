@@ -6,6 +6,7 @@ import Qiwi from '../../assets/basket/qiwi.png'
 import WebMoney from '../../assets/basket/webMoney.png'
 import {Link, useNavigate} from 'react-router-dom'
 import {CustomContext} from "../../utils/Context";
+import BasketPayment from './BasketPayment/BasketPayment';
 
 const Basket = () => {
 
@@ -15,7 +16,7 @@ const Basket = () => {
 
     const {t} = useTranslation()
 
-    const [active, setActive] = useState(false)
+    const [selectedPayment, setSelectedPayment] = useState(false)
     const [fav, setFav] = useState(false)
 
 
@@ -47,14 +48,14 @@ const Basket = () => {
                                         basket.map((item) => (
                                         <li key={item.id} className="basket__product">
                                             <div className="basket__product-box">
-                                                <img onClick={() => navigate(`/product/${item.id}`)} src={item.image} alt={item.title} className="basket__product-img"/>
+                                                <img onClick={() => navigate(`/product/${item.id}`)} src={item.images.main} alt={item.title} className="basket__product-img"/>
                                             </div>
                                             <div className="basket__product-box">
                                                 <h3 onClick={() => navigate(`/product/${item.id}`)} className="basket__product-title">{item.title}</h3>
                                                 <div className="basket__product-prices">
-                                                    <p className="basket__product-price">{item.discount > 0 ? <span>{Math.trunc(item.price - item.price / 100 * item.discount)}</span> : item.price}</p>
-                                                    <p className="basket__product-disc">{item.discount > 0 ? <span className="item__discount-count">-{item.discount}$</span> : ''}</p>
-                                                    <p className="basket__product-original">{item.price}</p>
+                                                    <p className="basket__product-price">{item.discount > 0 ? <span>{Math.trunc(item.price * (1 - item.discount / 100))}$</span> : item.price}</p>
+                                                    <p className="basket__product-disc">{item.discount > 0 ? <span className="item__discount-count">-{item.discount}%</span> : ''}</p>
+                                                    <p className="basket__product-original">{item.discount > 0 ? `${item.price}$` : ''}</p>
                                                 </div>
                                                 <div className="basket__product-desc">
                                                     <p className="basket__product-activate">
@@ -68,14 +69,14 @@ const Basket = () => {
                                                 </div>
                                             </div>
                                             <div className="basket__product-box">
-                                <span onClick={() => delBasket(item.id)} className="basket__product-icon">
-                                    <CgClose size="15px" fill="rgba(255, 255, 255, 0.2)"/>
-                                </span>
+                                                <span onClick={() => delBasket(item.id)} className="basket__product-icon">
+                                                    <CgClose size="15px" fill="rgba(255, 255, 255, 0.2)"/>
+                                                </span>
                                                 <div className="basket__product-addition">
                                                     <p onClick={() => minusBasket(item.id)} className="basket__product-add">-</p>
                                                     <span className="basket__product-count">
-                                                {basket.find(product => product.id === item.id).count}
-                                                 </span>
+                                                        {basket.find(product => product.id === item.id).count}
+                                                    </span>
                                                     <p onClick={() => plusBasket(item.id)} className="basket__product-add">+</p>
                                                 </div>
                                                 <span onClick={() => addFavorite(item.id)} className="basket__product-icon">
@@ -88,58 +89,10 @@ const Basket = () => {
                                 </ul> : <div className="basket__content-empty"><p className="basket__content-empty-text">Корзина пуста</p></div>
                             }
                             <ul className="basket__payments">
-                                <li className={active === true ? "basket__payment-active" : "basket__payment" }>
-                                    <div className="basket__payment-card">
-                                        <label className="basket__payment-label">
-                                            <input onClick={() => setActive(true)} className="basket__payment-input" type="radio"/>
-
-                                            <h2 className="basket__payment-title">Электронные кошельки</h2>
-                                        </label>
-                                        <div className="basket__payment-method">
-                                            <img src={Qiwi} alt="payment method" className="basket__payment-img"/>
-                                            <img src={WebMoney} alt="payment method" className="basket__payment-img"/>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li className={active === true ? "basket__payment-active" : "basket__payment" }>
-                                    <div className="basket__payment-card">
-                                        <label className="basket__payment-label">
-                                            <input onClick={() => setActive(true)} className="basket__payment-input" type="radio"/>
-
-                                            <h2 className="basket__payment-title">Электронные кошельки</h2>
-                                        </label>
-                                        <div className="basket__payment-method">
-                                            <img src={Qiwi} alt="payment method" className="basket__payment-img"/>
-                                            <img src={WebMoney} alt="payment method" className="basket__payment-img"/>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li className={active === true ? "basket__payment-active" : "basket__payment" }>
-                                    <div className="basket__payment-card">
-                                        <label className="basket__payment-label">
-                                            <input onClick={() => setActive(true)} className="basket__payment-input" type="radio"/>
-
-                                            <h2 className="basket__payment-title">Электронные кошельки</h2>
-                                        </label>
-                                        <div className="basket__payment-method">
-                                            <img src={Qiwi} alt="payment method" className="basket__payment-img"/>
-                                            <img src={WebMoney} alt="payment method" className="basket__payment-img"/>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li className={active === true ? "basket__payment-active" : "basket__payment" }>
-                                    <div className="basket__payment-card">
-                                        <label className="basket__payment-label">
-                                            <input onClick={() => setActive(true)} className="basket__payment-input" type="radio"/>
-
-                                            <h2 className="basket__payment-title">Электронные кошельки</h2>
-                                        </label>
-                                        <div className="basket__payment-method">
-                                            <img src={Qiwi} alt="payment method" className="basket__payment-img"/>
-                                            <img src={WebMoney} alt="payment method" className="basket__payment-img"/>
-                                        </div>
-                                    </div>
-                                </li>
+                                <BasketPayment/>
+                                <BasketPayment/>
+                                <BasketPayment/>
+                                <BasketPayment/>
                             </ul>
                         </div>
                     </div>
@@ -150,10 +103,10 @@ const Basket = () => {
                                     basket.length ? <p>{basket.length} {t('basket.asideTotal')}</p> : <p>Корзина пуста</p>
                                 }
                             </span>
-                            <p className="basket__aside-total">{basket.reduce((acc, rec) => acc + rec.count * rec.price, 0)} Р</p>
+                            <p className="basket__aside-total">{basket.reduce((acc, rec) => acc + rec.count * rec.price, 0)}$</p>
                             <button onClick={() => navigate('/checkout')} type="button" className="basket__aside-btn">{t('basket.asideBtn')}</button>
                             <div className="basket__aside-label">
-                                {t('basket.asideCheck')} <a href="https://www.youtube.com/watch?v=1GpkiX13OHw&t=1376s" className="basket__aside-link">
+                                {t('basket.asideCheck')} <a target='_blank' href="https://github.com/lokge" className="basket__aside-link">
                                 {t('basket.asideLink')}
                             </a>
                             </div>

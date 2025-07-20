@@ -8,10 +8,10 @@ const BasketPayment = () => {
     const [active, setActive] = useState(false)
 
     return (
-        <ul className={active === true ? "basket__payment-active" : "basket__payment" }>
+        <li name='checked' onClick={() => setActive(!active)} className={active === true ? "basket__payment-active" : "basket__payment" }>
             <div className="basket__payment-card">
-                <label htmlFor='checked' className="basket__payment-label">
-                    <input name='checked' onClick={() => setActive(true)} className="basket__payment-input" type="radio"/>
+                <label className="basket__payment-label">
+                    <span className={`basket__payment-input ${active ? 'active' : ''}`} />
 
                     <h2 className="basket__payment-title">Электронные кошельки</h2>
                 </label>
@@ -20,7 +20,7 @@ const BasketPayment = () => {
                     <img src={Qiwi} alt="payment method" className="basket__payment-img"/>
                 </div>
             </div>
-        </ul>
+        </li>
     );
 };
 

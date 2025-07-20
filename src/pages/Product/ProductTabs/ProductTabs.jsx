@@ -22,11 +22,11 @@ const ProductTabs = ({product, status}) => {
                                 <p className="product__tab-text">Место на диске</p>
                             </div>
                             <div className="product__tab-box">
-                                <p className="product__tab-ans">{product.minSystem}</p>
-                                <p className="product__tab-ans">{product.minSystem}</p>
-                                <p className="product__tab-ans">{product.minSystem}</p>
-                                <p className="product__tab-ans">{product.minSystem}</p>
-                                <p className="product__tab-ans">{product.minSystem}</p>
+                                <p className="product__tab-ans">{product.minSystem?.os}</p>
+                                <p className="product__tab-ans">{product.minSystem?.processor}</p>
+                                <p className="product__tab-ans">{product.minSystem?.videocard}</p>
+                                <p className="product__tab-ans">{product.minSystem?.ram}</p>
+                                <p className="product__tab-ans">{product.minSystem?.hdd}</p>
                             </div>
                         </div>
                     </div>
@@ -41,11 +41,11 @@ const ProductTabs = ({product, status}) => {
                                 <p className="product__tab-text">Место на диске</p>
                             </div>
                             <div className="product__tab-box">
-                                <p className="product__tab-ans">{product.recSystem}</p>
-                                <p className="product__tab-ans">{product.recSystem}</p>
-                                <p className="product__tab-ans">{product.recSystem}</p>
-                                <p className="product__tab-ans">{product.recSystem}</p>
-                                <p className="product__tab-ans">{product.recSystem}</p>
+                                <p className="product__tab-ans">{product.recSystem?.os}</p>
+                                <p className="product__tab-ans">{product.recSystem?.processor}</p>
+                                <p className="product__tab-ans">{product.recSystem?.videocard}</p>
+                                <p className="product__tab-ans">{product.recSystem?.ram}</p>
+                                <p className="product__tab-ans">{product.recSystem?.hdd}</p>
                             </div>
                         </div>
                     </div>

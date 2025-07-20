@@ -1,4 +1,13 @@
 .card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  max-height: 580px;
+  min-height: 580px;
+  border-radius: 15px;
+  overflow: hidden;
   &__new{
     position: absolute;
     top: 20px;
@@ -9,15 +18,7 @@
     min-width: 300px;
     max-width: 300px;
     height: 400px;
-  }
-  &__content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    max-height: 580px;
-    min-height: 580px;
+    border-radius: 15px;
   }
   &__prices{
     display: flex;

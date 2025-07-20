@@ -19,15 +19,15 @@ const Favorite = () => {
                             ? <ul className="favorite__list">
                                 {
                                     favorite.map((item) => (
-                                        <li className="favorite__list-item">
+                                        <li key={item.id} className="favorite__list-item">
                                             <div className="favorite__product-box">
-                                                <img onClick={() => navigate(`/product/${item.id}`)} src={item.image} alt={item.title} className="basket__product-img"/>
+                                                <img onClick={() => navigate(`/product/${item.id}`)} src={item.images.main} alt={item.title} className="basket__product-img"/>
                                                 <div className="favorite__product-descriptions">
                                                     <h3 onClick={() => navigate(`/product/${item.id}`)} className="basket__product-title">{item.title}</h3>
                                                     <div className="basket__product-prices">
-                                                        <p className="basket__product-price">{item.discount > 0 ? <span>{Math.trunc(item.price - item.price / 100 * item.discount)}</span> : item.price}</p>
-                                                        <p className="basket__product-disc">{item.discount > 0 ? <span className="item__discount-count">-{item.discount}$</span> : ''}</p>
-                                                        <p className="basket__product-original">{item.discount > 0 ? item.price : ''}</p>
+                                                        <p className="basket__product-price">{item.discount > 0 ? <span>{Math.trunc(item.price - item.price / 100 * item.discount)}</span> : item.price}$</p>
+                                                        <p className="basket__product-disc">{item.discount > 0 ? <span className="item__discount-count">-{item.discount}%</span> : ''}</p>
+                                                        <p className="basket__product-original">{item.discount > 0 ? `${item.price}$` : ''}</p>
                                                     </div>
                                                     <div className="basket__product-desc">
                                                         <p className="basket__product-activate">
