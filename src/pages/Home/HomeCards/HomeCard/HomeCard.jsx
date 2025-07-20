@@ -1,22 +1,21 @@
 import React, {useContext} from 'react';
 import {BsFillCheckCircleFill} from "react-icons/bs";
 import {CustomContext} from "../../../../utils/Context";
-import {useNavigate} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const HomeCard = ({item}) => {
 
     const {basket, addBasket} = useContext(CustomContext)
-    const navigate = useNavigate()
 
     return (
-        <div style={{cursor: "pointer"}} className="home__card">
-            <img onClick={() => navigate(`/product/${item.id}`)} className="home__card-image" src={item.bigImage} alt={item.bigImage ? item.title : ''}/>
-            <div onClick={() => navigate(`/product/${item.id}`)} className="card__prices">
-                <p className="card__price">{item.price}</p>
-                <p className="card__disc">{item.discount}</p>
-                <p className="card__original">{item.price}</p>
+        <NavLink to={`/product/${item.id}`} style={{cursor: "pointer"}} className="home__card">
+            <img className="home__card-image" src={item.images.bigImage} alt={item.images.bigImage ? item.title : ''}/>
+            <div className="card__prices">
+                <p className="card__price">{item.discount ? Math.trunc(item.price * (1 - item.discount / 100)) : item.price}$</p>
+                <p className="card__disc">{item.discount > 0 ? `${item.discount}%` : '' }</p>
+                <p className="card__original">{item.discount > 0 ? `${item.price}$` : ''}</p>
             </div>
-            <h3 className="home__card-title">{item.bigImage ? item.title : ''}</h3>
+            <h3 className="home__card-title">{item.title}</h3>
             <div className="home__card-btns">
                 <div className="card__chose-cont">
                     {
@@ -55,7 +54,7 @@ const HomeCard = ({item}) => {
                     <p className="card__key-text">{item.service}</p>
                 </div>
             </div>
-        </div>
+        </NavLink>
     );
 };
 

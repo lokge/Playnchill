@@ -5,6 +5,11 @@ export const CustomContext = createContext()
 
 export const Context = (props) => {
 
+    const [notification, setNotification] = useState({
+        text: '',
+        type: 'error',
+        active: false,
+    })
 
     const [user, setUser] = useState({
         email: ''
@@ -13,27 +18,43 @@ export const Context = (props) => {
     //Избранные
     const [favorite, setFavorite] = useState([])
     const addFavorite = (product) => {
-        setFavorite(prev => [...prev, {
-            ...product,
-            count: 1,
-        }])
-        localStorage.setItem('favorite', JSON.stringify(favorite))
+        //Проверка на наличие в избранном
+        if (favorite.some(item => item.id === product.id)) {
+            return setNotification({text: 'Игра уже в избранном', type: 'error', active: true});
+        } else {
+            setFavorite(prev => [...prev, {
+                ...product,
+                count: 1,
+            }]);
+
+            localStorage.setItem('favorite', JSON.stringify(favorite));
+            return setNotification({text: 'Вы добавили игру в избранные', type: 'success', active: true});
+        }
     }
     const delFavorite = (id) => {
         setFavorite(prev => prev.filter(item => item.id !== id))
+        return setNotification({text: 'Игра удалена из избранных', type: 'success', active: true});
     }
 
 
     //Работа с корзиной
     const [basket, setBasket] = useState([])
     const addBasket = (product) => {
-        setBasket(prev => [...prev, {
-            ...product,
-            count: 1,
-        }])
+        if (basket.some(item => item.id === product.id)) {
+            return setNotification({text: 'Игра уже в корзине', type: 'error', active: true});
+        } else {
+            setBasket(prev => [...prev, {
+                ...product,
+                count: 1,
+            }])
+
+            localStorage.setItem('basket', JSON.stringify(basket))
+            return setNotification({text: 'Игра добавлена в корзину', type: 'success', active: true});
+        }
     }
     const delBasket = (id) => {
         setBasket(prev => prev.filter(item => item.id !== id))
+        return setNotification({text: 'Игра удалена из корзины', type: 'success', active: true});
     }
 
 
@@ -113,7 +134,9 @@ export const Context = (props) => {
         delBasket,
         favorite,
         addFavorite,
-        delFavorite
+        delFavorite,
+        notification,
+        setNotification
     }
 
     return <CustomContext.Provider value={value}>

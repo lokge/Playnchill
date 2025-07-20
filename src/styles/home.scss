@@ -2,11 +2,22 @@
   background-color: $black;
   padding: 40px 0 80px;
   &__swiper{
+    user-select: none;
     &-row{
       display: flex;
       justify-content: center;
       padding: 40px 0;
       background-color: $black;
+      height: 700px;
+      .home__swiper-img {
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .home__swiper-title {
+        @include text(800, 0, 48px, white);
+        width: 100%;
+        text-align: left;
+      }
     }
     &-logo{
       position: absolute;
@@ -19,16 +30,20 @@
     }
     &-desc{
       position: absolute;
-      left: 120px;
-      top: 261px;
-      &-img{
-
-      }
+      left: 4%;
+      bottom: 4%;
+      background: #000000d1;
+      padding: 10px 20px;
+      border-radius: 16px;
     }
     &-description{
       @include text(400, 38px, 24px, white);
       text-align: start;
       width: 592px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
     }
     &-prices{
       display: flex;
@@ -49,7 +64,6 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 130px;
     }
     &-btn{
       background-color: white;
@@ -111,8 +125,10 @@
     }
     &-image{
       width: 620px;
+      height: 319px;
       border-radius: 15px;
       cursor: pointer;
+      object-fit: cover;
     }
     &-title{
       margin: 20px 0;
@@ -138,6 +154,10 @@
       width: 379px;
       text-align: start;
       z-index: 5;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
     }
     &-prices{
       display: flex;

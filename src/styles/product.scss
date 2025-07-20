@@ -157,7 +157,8 @@
   &__tab{
     &-content{
       display: flex;
-      column-gap: 50px;
+      gap: 20px;
+      flex-direction: column;
     }
     &-title{
       @include text(600, 0, 20px, white)
@@ -178,6 +179,11 @@
       column-gap: 15px;
       &:first-of-type{
         margin-bottom: 25px;
+      }
+    }
+    &-descriptions {
+      &:first-child {
+        border-bottom: 1px solid;
       }
     }
   }

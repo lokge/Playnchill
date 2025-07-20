@@ -18,7 +18,7 @@ const Checkout = () => {
     const navigate = useNavigate()
 
     //Получение данных с корзины
-    const {basket, delBasket, user, setBasket} = useContext(CustomContext)
+    const {basket, delBasket, user, setBasket, setNotification} = useContext(CustomContext)
 
     const {reset, register, handleSubmit} = useForm()
 
@@ -29,7 +29,7 @@ const Checkout = () => {
             price: basket.reduce((acc, rec) => acc + rec.count * rec.price, 0),
             user: user,
             date: new Date()
-        }).then(() => console.log('Успешно добавлен'))
+        }).then(() => setNotification({text: 'Вы приобрели игру!', type: 'success', active: true}))
 
         await axios.patch(`http://localhost:6969/users/${user.id}`, {
             games : {
@@ -160,7 +160,7 @@ const Checkout = () => {
                                         <div className="checkout__aside-small">
                                             <div className="checkout__aside-small-content">
                                                 <span className="checkout__aside-small-imgCont">
-                                                  <img src={item.image} alt={item.title}
+                                                  <img src={item.images.main} alt={item.title}
                                                        className="checkout__aside-small-img"/>
                                               </span>
                                                 <div className="checkout__aside-small-text">
@@ -176,7 +176,7 @@ const Checkout = () => {
                                     </div>
                                     : <div key={item.id} className="checkout__aside-content">
                                           <span className="checkout__aside-imgCont">
-                                    <img src={item.image} alt="" className="checkout__aside-img"/>
+                                    <img src={item.images.main} alt="" className="checkout__aside-img"/>
                                 </span>
                                         <h3 onClick={() => navigate(`/product/${item.id}`)}
                                             className="checkout__aside-gameTitle">{item.title}</h3>

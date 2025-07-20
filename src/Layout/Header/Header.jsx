@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useContext, useState, useEffect, useRef} from 'react';
 import {CiSearch} from 'react-icons/ci'
 import {RiShoppingCartLine} from 'react-icons/ri'
 import {AiOutlineHeart} from 'react-icons/ai'
@@ -8,7 +8,7 @@ import {useTranslation} from "react-i18next";
 import SwitchLang from "./SwitchLang/SwitchLang";
 import {Avatar} from "@chakra-ui/react";
 import HeadFilter from "./HeadFilter/HeadFilter";
-import {Link, useNavigate} from "react-router-dom"
+import {Link, useNavigate, useSearchParams} from "react-router-dom"
 import {CustomContext} from "../../utils/Context";
 import axios from "../../utils/axios";
 import debounce from "@material-ui/core/utils/debounce";
@@ -43,11 +43,28 @@ const Header = () => {
         localStorage.removeItem('user')
     }
 
-
-
     const {t} = useTranslation()
 
     const navigate = useNavigate()
+
+    const inputRef = useRef();
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    const searchGames = () => {
+        const value = inputRef.current?.value.trim() || '';
+
+        const newParams = new URLSearchParams(searchParams);
+
+        if (value == '') {
+            newParams.delete('title');
+        } else {
+            newParams.set('title', value);
+            newParams.set('page', 1);
+        }
+
+        setSearchParams(newParams);
+        navigate(`/catalog/all?${newParams.toString()}`);
+    };
 
     return (
         <header className="header">
@@ -84,8 +101,8 @@ const Header = () => {
                                 <HeadFilter/>
                             </span>
                             <label className="header__label">
-                                <input type="search" className="header__search" placeholder={t('header.field')}/>
-                                <span className="header__search-logo">
+                                <input ref={inputRef} onKeyUp={(e) => e.key == "Enter" && searchGames()} type="text" className="header__search" placeholder={t('header.field')}/>
+                                <span onClick={() => searchGames()} className="header__search-icon">
                                     <CiSearch fill='#323232' size='30px'/>
                                 </span>
                             </label>

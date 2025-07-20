@@ -1,5 +1,5 @@
-import {Suspense} from "react";
-import {Route, Routes} from 'react-router-dom'
+import {useEffect, Suspense} from "react";
+import {Route, Routes, useLocation} from 'react-router-dom'
 import Layout from "./Layout/Layout";
 import Home from "./pages/Home/Home";
 import Basket from "./pages/Basket/Basket";
@@ -18,8 +18,11 @@ import Product from "./pages/Product/Product";
 import Order from "./pages/Order/Order";
 
 function App() {
+  const location = useLocation();
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <Suspense fallback={'...Store Loading'}>

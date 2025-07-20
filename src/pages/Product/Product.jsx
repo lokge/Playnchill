@@ -24,15 +24,16 @@ const Product = () => {
     const [product, setProduct] = useState([])
     const {id} = useParams()
 
-
-
-    const {basket, addBasket, addFavorite} = useContext(CustomContext)
+    const {basket, addBasket, addFavorite, setNotification} = useContext(CustomContext)
 
     useEffect(() => {
         axios(`http://localhost:6969/products/${id}`)
             .then(({data}) => setProduct(data))
-            .catch((err) => console.log('Ошибка при получении продукта'))
-    }, [product])
+            .catch((err) => setNotification({text: 'Продукт не найден', type: 'alert', active: true}))
+    }, [id])
+
+    // Генерация случайного индекса для отображения 4 случайных игр
+    const [randomIndex] = useState(() => Math.floor(Math.random() * games.length));
 
     if (JSON.stringify(product) === '{}'){
         return (
@@ -45,7 +46,7 @@ const Product = () => {
                 <div className="container">
                     <div className="product__container">
                         <div className="product__main-imgCont">
-                            <img src={product.image} alt={product.title} className="product__main-img"/>
+                            <img src={product.images?.main} alt={product.title} className="product__main-img"/>
                         </div>
                         <div className="product__block">
                             <h3 className="product__title">{product.title}</h3>
@@ -58,12 +59,12 @@ const Product = () => {
                                 </div>}
                             </span>
                             <div className="product__prices">
-                                <p className="product__price">{product.discount > 0 ? <span>{Math.trunc(product.price - product.price / 100 * product.discount)}</span> : product.price}</p>
-                                <p className="product__discount">{product.discount > 0 ? <span className="item__discount-count">-{product.discount}$</span> : ''}</p>
-                                <p className="product__original">{product.discount > 0 ? product.price : ''}</p>
+                                <p className="product__price">{product.discount > 0 ? <span>{Math.trunc(product.price * (1 - product.discount / 100))}</span> : product.price}$</p>
+                                <p className="product__discount">{product.discount > 0 ? <span className="item__discount-count">-{product.discount}%</span> : ''}</p>
+                                <p className="product__original">{product.discount > 0 ? `${product.price}$` : ''}</p>
                             </div>
                             <div className="product__btns">
-                                <button type="button" onClick={() => navigate('/checkout')} className="product__btn">Купить</button>
+                                <button type="button" onClick={() => {addBasket(product); navigate('/checkout')}} className="product__btn">Купить</button>
                                 <button type="button" onClick={() => addBasket(product)} className="product__btn">В корзину</button>
                                 <button type="button" onClick={() => addFavorite(product)} className="product__btn"><AiOutlineHeart className="product__btn-icon"/></button>
                             </div>
@@ -108,7 +109,7 @@ const Product = () => {
                     <h3 className="product__recs-title">Вам будет интересно</h3>
                     <div className="product__recs-box">
                         {
-                            games.slice(15, 19).map((item) => (
+                            games.slice(randomIndex, randomIndex + 4).map((item) => (
                                 <Card key={item.id} item={item}/>
                             ))
                         }

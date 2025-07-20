@@ -65,13 +65,16 @@
     height: 66px;
     @include text(400, 0, 16px, white);
     clear: none;
+    cursor: text;
     &::placeholder{
       @include text(400, 0, 16px, #9B9A9F);
     }
-    &-logo{
+    &-icon{
       position: absolute;
       top: 15px;
       right: 20px;
+      cursor: pointer;
+      user-select: none;
     }
     &-filter{
       position: relative;
