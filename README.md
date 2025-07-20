@@ -5,7 +5,7 @@ Welcome to **Playnchill** — a sleek and modern React-based eCommerce platform 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18-blue?logo=react" />
   <img src="https://img.shields.io/badge/json--server-Mock%20API-brightgreen" />
-  <img src="https://img.shields.io/badge/Vite-Fast%20Build-646cff?logo=vite" />
+  <img src="https://img.shields.io/badge/-SCSS-black?style=flat-square&logo=SASS" />
 </p>
 
 ---
