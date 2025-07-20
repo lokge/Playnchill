@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# 🎮 Playnchill
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Playnchill** — a sleek and modern React-based eCommerce platform for browsing, reviewing, and purchasing digital video games.
 
-## Available Scripts
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-blue?logo=react" />
+  <img src="https://img.shields.io/badge/json--server-Mock%20API-brightgreen" />
+  <img src="https://img.shields.io/badge/Vite-Fast%20Build-646cff?logo=vite" />
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧩 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔎 Search for games by title
+- 🛍️ Add/remove items to cart
+- 🛍️ Buying and saving products in localStorage
+- 👤 User authentication (login/register)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Playnchill/
+├── public/                # HTML template & static files
+├── src/
+│   ├── assets/            # Images & icons
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # Route-based pages (Home, Cart, Product, etc.)
+│   ├── styles/            # SCSS styles
+│   ├── utils/             # API (Axios), context, helpers
+│   ├── App.jsx
+│   └── main.jsx
+├── db.json                # Fake backend data for json-server
+└── package.json
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/lokge/Playnchill.git
+cd Playnchill
+```
 
-### `npm run eject`
+### 2. Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Start the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# Start both frontend and backend using concurrently
+npm run dev
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# If you want to start only the backend server
+npm run server
 
-## Learn More
+# If you want to start only the React frontend without the backend
+npm run start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+App runs on: [http://localhost:3000/](http://localhost:3000/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧪 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Layer       | Technology             |
+|-------------|------------------------|
+| Frontend    | React                  |
+| Routing     | React Router DOM       |
+| State Mgmt  | Context API            |
+| API Calls   | Axios                  |
+| UI Plugins  | Fancybox, Swiper, React Icons |
+| Backend     | json-server (mock API) |
 
-### Analyzing the Bundle Size
+## 🤝 Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome!
 
-### Making a Progressive Web App
+1. Fork the repo
+2. Create a new branch (`feature/your-feature`)
+3. Commit your changes
+4. Open a Pull Request ✅
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🧑‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Erkin Dzhamanbaev**  
+GitHub: [@lokge](https://github.com/lokge)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
+This project is licensed under the **MIT License**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+> _Built with ❤️ using React_
